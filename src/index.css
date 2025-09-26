@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+
+
+:root {
+  font-family: 'Tango Sans';
+  line-height: 1.5;
+  font-weight: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+*::-webkit-scrollbar {
+  display: block;
+  width: 0.1vw;
+  position: absolute;
+  border-radius: 0.1vw;
+  background-color: rgb(24, 23, 48);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff90;
+  border: 0.1vw solid #ffffff90;
+}
+.thumb::-webkit-scrollbar {
+  display: block;
+  width: 1vw;
+  position: absolute;
+  border-radius: 1vw;
+  background-color: #181730;
+}
+
+.thumb::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+  border: 0.2vw solid #000000;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.animate-hand{
+  animation: breathing 0.5s infinite alternate;
+}
+
+@keyframes breathing {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@font-face {
+  font-family: tangoSans;
+  src: url(./assets/fonts/TangoSans.ttf);
+}
+.f-tangoSans {
+  font-family: tangoSans;
+    /* text-shadow: 1px 1px 2px black; */
+
+}
+@font-face {
+  font-family: tangoSansItalic;
+  src: url(./assets/fonts/TangoSansItalic.ttf);
+}
+.f-tangoSansItalic {
+  font-family: tangoSansItalic;
+  /* text-shadow: 1px 1px 2px black; */
+}
+@font-face {
+  font-family: sugarBomb;
+  src: url(./assets/fonts/SugarBomb.ttf);
+}
+.f-sugarBomb{
+  font-family: sugarBomb;
+}
+/* #preLoadContent */
+#extraContent {
+  height: 0vw;
+  width: 0vw;
+  position: absolute;
+  z-index: -99;
+  background: url("./assets/images/TalentGameAssets/flowerAnimation.gif");
+  opacity: 0;
+  top: 0px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

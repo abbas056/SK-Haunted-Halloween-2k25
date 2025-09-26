@@ -1,0 +1,249 @@
+{
+    "errorCode": 0,
+    "msg": "success",
+    "data": {
+        "list": [
+            {
+                "time": "2025-06-17T23:02:00.394+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 300,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 3000,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 200,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-06-17T23:01:53.605+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 50,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 200,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 30,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-06-17T23:01:45.228+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 100,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 300,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 75,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T22:08:26.502+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 200,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 2000,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 150,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T22:08:19.101+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 100,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 300,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 75,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T22:08:11.637+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 50,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 200,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 30,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T00:07:11.638+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 4,
+                        "id": 1627,
+                        "count": 2,
+                        "desc": "Gold Luxury Entrance"
+                    },
+                    {
+                        "type": 103,
+                        "count": 10,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T00:07:03.418+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 5,
+                        "id": 100,
+                        "count": 2,
+                        "desc": "Victor Audio Theme"
+                    },
+                    {
+                        "type": 102,
+                        "count": 100,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 150,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-10T00:06:53.336+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 50,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 200,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 30,
+                        "desc": "Troops"
+                    }
+                ]
+            },
+            {
+                "time": "2025-05-02T16:05:44.395+0000",
+                "type": 1,
+                "map": {
+                    "score": "1"
+                },
+                "rewardDTOList": [
+                    {
+                        "type": 1,
+                        "count": 50,
+                        "desc": "Beans"
+                    },
+                    {
+                        "type": 102,
+                        "count": 200,
+                        "desc": "Gold"
+                    },
+                    {
+                        "type": 103,
+                        "count": 30,
+                        "desc": "Troops"
+                    }
+                ]
+            }
+        ],
+        "pageNum": 1,
+        "pageSize": 10,
+        "pageCount": 2,
+        "count": 12
+    }
+}

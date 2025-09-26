@@ -1,0 +1,212 @@
+{
+    "errorCode": 0,
+    "msg": "success",
+    "data": {
+        "list": [
+            {
+                "ranking": 1,
+                "userId": 568728369,
+                "userScore": 9906050.0,
+                "nickname": "MR.ZEE77",
+                "userLevel": 104,
+                "actorLevel": 40,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/568728369_0_e387f421-3b68-486a-9660-ead8494c4f3f.jpg!128"
+            },
+            {
+                "ranking": 2,
+                "userId": 661875381,
+                "userScore": 8641061.0,
+                "nickname": "Dashing\uD83D\uDE08",
+                "userLevel": 14,
+                "actorLevel": 1,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250617/661875381_0_466682f798a443b9854fb72bcd52600d.png!128"
+            },
+            {
+                "ranking": 3,
+                "userId": 637997739,
+                "userScore": 5696822.0,
+                "nickname": "Bismillah  \uD83E\uDD32\uD83E\uDD32\uD83E\uDD32\uD83E\uDD32",
+                "userLevel": 19,
+                "actorLevel": 4,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250519/637997739_0_4967bbf41ac34998a061a64bb7f7fb02.png!128"
+            },
+            {
+                "ranking": 4,
+                "userId": 586781663,
+                "userScore": 5074155.0,
+                "nickname": "\uD83E\uDEBD\uD83E\uDEBD\uD83E\uDEBD\uD83E\uDEBD\uD83E\uDEBD\uD83E\uDEBD\uD83E\uDEBD",
+                "userLevel": 21,
+                "actorLevel": 8,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/586781663_0_2d972393-9506-4ee0-afc5-8dac903b7bc9.jpg!128"
+            },
+            {
+                "ranking": 5,
+                "userId": 630725105,
+                "userScore": 4897821.0,
+                "nickname": "14 14 I love you",
+                "userLevel": 16,
+                "actorLevel": 5,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250601/630725105_0_82fa4f18e879486ca9e0027aa6738f22.png!128"
+            },
+            {
+                "ranking": 6,
+                "userId": 597245757,
+                "userScore": 3354328.0,
+                "nickname": "♥️ᖴᗩᎥ乙Ꭵ\uD83D\uDC3B",
+                "userLevel": 20,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/597245757_0_e5efe646-bf97-43dc-afac-7e74acede488.png!128"
+            },
+            {
+                "ranking": 7,
+                "userId": 80117,
+                "userScore": 2736692.0,
+                "nickname": "MR  VISITOR",
+                "userLevel": 32,
+                "actorLevel": 1,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250607/80117_0_fe66d5c3be1c44709342fbf677cbf73b.png!128"
+            },
+            {
+                "ranking": 8,
+                "userId": 662742467,
+                "userScore": 2678636.0,
+                "nickname": "\uD835\uDE48\uD835\uDE67.\uD835\uDE59\uD835\uDE56\uD835\uDE63\uD835\uDE5E\uD835\uDE6E\uD835\uDE56\uD835\uDE61",
+                "userLevel": 18,
+                "actorLevel": 5,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250531/662742467_0_242f918ebadb42688d46bb917120c870.png!128"
+            },
+            {
+                "ranking": 9,
+                "userId": 603904667,
+                "userScore": 2587023.0,
+                "nickname": "\uD808\uDD9Cм\uD835\uDC04ε\uD835\uDC2B ђ\uD835\uDD1E\uD835\uDCB9Į \uD808\uDD9C",
+                "userLevel": 23,
+                "actorLevel": 8,
+                "liveType": 1,
+                "portrait": "http://img.sklite.live/image/603904667_0_ba463a90-517b-482a-bdea-e360bd4f3448.png!128"
+            },
+            {
+                "ranking": 10,
+                "userId": 586421970,
+                "userScore": 2539837.0,
+                "nickname": "Kamlesh Vaishnav \uD83D\uDD49️",
+                "userLevel": 18,
+                "actorLevel": 30,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/586421970_0_a0de6a9b-504b-4229-b7d5-6c55acbcbf4e.png!128"
+            },
+            {
+                "ranking": 11,
+                "userId": 594815894,
+                "userScore": 2410867.0,
+                "nickname": "ṚÖṀÄṄṪЇĊ",
+                "userLevel": 22,
+                "actorLevel": 6,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/594815894_0_b20720ef-60c3-4c33-85cc-f46cb9c84e9c.png!128"
+            },
+            {
+                "ranking": 12,
+                "userId": 591853839,
+                "userScore": 2256809.0,
+                "nickname": "MISKAT....",
+                "userLevel": 22,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250608/591853839_0_6cf611025bcc41deaa9a53767db6cae8.png!128"
+            },
+            {
+                "ranking": 13,
+                "userId": 662394761,
+                "userScore": 1978446.0,
+                "nickname": "⟶\uD835\uDC01υ\uD801\uDCE3\uD801\uDCE3\uD835\uDDD2\uD83D\uDC07",
+                "userLevel": 16,
+                "actorLevel": 2,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250523/662394761_0_64c14e0c03ef4f2ca52eb85d1bb6a9b2.png!128"
+            },
+            {
+                "ranking": 14,
+                "userId": 593087714,
+                "userScore": 1845244.0,
+                "nickname": "\uD83D\uDC79\uD83D\uDD2B\uD835\uDCE1obi\uD835\uDCE5ai007\uD83D\uDD2B\uD83D\uDC79",
+                "userLevel": 18,
+                "actorLevel": 7,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/593087714_0_deecda91-b2e8-4002-b28a-cb06121bfd98.png!128"
+            },
+            {
+                "ranking": 15,
+                "userId": 571552097,
+                "userScore": 1736111.0,
+                "nickname": "®️\uD835\uDCE6\uD835\uDCEA\uD835\uDCFB\uD835\uDCFB\uD835\uDCF2\uD835\uDCF8\uD835\uDCFB \uD83C\uDFCB",
+                "userLevel": 42,
+                "actorLevel": 6,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250605/571552097_0_8fb962b54c634cf58c69150ea54e0f11.png!128"
+            },
+            {
+                "ranking": 16,
+                "userId": 603306661,
+                "userScore": 1708505.0,
+                "nickname": "\uD83E\uDDDE‍♂️》Aladdin《\uD83E\uDDDE‍♂",
+                "userLevel": 20,
+                "actorLevel": 3,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/603306661_0_2b181a47-0392-4152-8ef7-14d203bfcbaa.png!128"
+            },
+            {
+                "ranking": 17,
+                "userId": 659849051,
+                "userScore": 1595684.0,
+                "nickname": "lukmaan brand \uD83D\uDE0A\uD83E\uDD70",
+                "userLevel": 18,
+                "actorLevel": 2,
+                "liveType": 1,
+                "portrait": "http://img.sklite.live/image/659849051_0_4d109080-8c99-4045-bf8a-cd8ac5523b8d.png!128"
+            },
+            {
+                "ranking": 18,
+                "userId": 564816881,
+                "userScore": 1577140.0,
+                "nickname": "CRUSH❤️\uD83D\uDC4C",
+                "userLevel": 14,
+                "actorLevel": 7,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/564816881_0_2879ac48-31eb-4480-9d42-e4add169e230.jpg!128"
+            },
+            {
+                "ranking": 19,
+                "userId": 615565967,
+                "userScore": 1549671.0,
+                "nickname": "\uD83D\uDC95\"\",,,\"\"\uD83D\uDC95",
+                "userLevel": 17,
+                "actorLevel": 2,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/615565967_0_f5f1e775-f4b7-4c44-8cfe-ff01b3e45ad1.png!128"
+            },
+            {
+                "ranking": 20,
+                "userId": 561839941,
+                "userScore": 1293751.0,
+                "nickname": "AJAY@@@",
+                "userLevel": 42,
+                "actorLevel": 7,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/561839941_0_fdae784c-7879-439a-b29d-4731a081aaf2.png!128"
+            }
+        ],
+        "pageCount": 2,
+        "pageNum": 1,
+        "pageSize": 20,
+        "count": 40
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "errorCode": 0,
+    "msg": "success",
+    "data": {
+        "weekIndex": 8,
+        "gamePoints": 3165161123,
+        "myDailyPoints": 1564,
+        "talentPoints": 564616651,
+        "myComboMeters": 4,
+        "beansPotInfo": {
+            "DAILY_USER_2025-06-18": 1710800,
+            "WEEKLY_USER_7": 14869088,
+            "OVERALL_BEANS": 377970744,
+            "WEEKLY_USER_8": 3262960,
+            "DAILY_USER_2025-06-17": 64
+        }
+    }
+}

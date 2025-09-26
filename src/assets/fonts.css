@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Tango Sans';
+  src: url('./fonts/TangoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tango Sans';
+  src: url('./fonts/TangoSansBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tango Sans';
+  src: url('./fonts/TangoSansItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+} 

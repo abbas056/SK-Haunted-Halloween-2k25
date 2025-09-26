@@ -1,0 +1,232 @@
+{
+    "errorCode": 0,
+    "msg": "success",
+    "data": {
+        "list": [
+            {
+                "userId": 641115757,
+                "userScore": 1,
+                "nickname": "kazmii110",
+                "gender": 1,
+                "userLevel": 7,
+                "actorLevel": 1,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250612/641115757_0_b2f3838c85624dba9a5fc17a8092517f.png!128",
+                "desc": "[{\"count\":300,\"desc\":\"Beans\",\"type\":1},{\"count\":3000,\"desc\":\"Gold\",\"type\":102},{\"count\":200,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 655596950,
+                "userScore": 1,
+                "nickname": "\uD83D\uDD25\uD83D\uDE0E\uD83D\uDE0E\uD83D\uDE0E\uD83D\uDD25",
+                "gender": 1,
+                "userLevel": 11,
+                "actorLevel": 1,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250606/655596950_0_3b292002cb1b4d5894a60204d666daf8.jpg!128",
+                "desc": "[{\"count\":200,\"desc\":\"Beans\",\"type\":1},{\"count\":2000,\"desc\":\"Gold\",\"type\":102},{\"count\":150,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 604684677,
+                "userScore": 1,
+                "nickname": "Y0U & ME",
+                "gender": 1,
+                "userLevel": 16,
+                "actorLevel": 7,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250617/604684677_0_e252392b0cf84feabe0e1165acb1db9c.png!128",
+                "desc": "[{\"count\":300,\"desc\":\"Beans\",\"type\":1},{\"count\":3000,\"desc\":\"Gold\",\"type\":102},{\"count\":200,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 604684677,
+                "userScore": 1,
+                "nickname": "Y0U & ME",
+                "gender": 1,
+                "userLevel": 16,
+                "actorLevel": 7,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250617/604684677_0_e252392b0cf84feabe0e1165acb1db9c.png!128",
+                "desc": "[{\"count\":300,\"desc\":\"Beans\",\"type\":1},{\"count\":3000,\"desc\":\"Gold\",\"type\":102},{\"count\":200,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 647893460,
+                "userScore": 1,
+                "nickname": "\uD83D\uDC94 IQBAL\uD83D\uDC94\uD83D\uDC94\uD83D\uDE2D\uD83D\uDE2D",
+                "gender": 1,
+                "userLevel": 7,
+                "actorLevel": 4,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/647893460_0_ffbba619-959c-4a2c-820d-dcf00d2a30ca.png!128",
+                "desc": "[{\"count\":200,\"desc\":\"Beans\",\"type\":1},{\"count\":2000,\"desc\":\"Gold\",\"type\":102},{\"count\":150,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 640842819,
+                "userScore": 10,
+                "nickname": "koushik\uD83E\uDD17",
+                "gender": 1,
+                "userLevel": 24,
+                "actorLevel": 6,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250521/640842819_0_5af00e52f50a4742b00616befba4dda9.png!128",
+                "desc": "[{\"count\":1100,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":2,\"desc\":\"Victor Audio Theme\",\"id\":100,\"type\":5},{\"count\":2,\"desc\":\"Sea Wolf Profile Frame\",\"id\":10190,\"type\":6},{\"count\":9950,\"desc\":\"Gold\",\"type\":102},{\"count\":1000,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 640842819,
+                "userScore": 10,
+                "nickname": "koushik\uD83E\uDD17",
+                "gender": 1,
+                "userLevel": 24,
+                "actorLevel": 6,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250521/640842819_0_5af00e52f50a4742b00616befba4dda9.png!128",
+                "desc": "[{\"count\":1550,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":2,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":2,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":15350,\"desc\":\"Gold\",\"type\":102},{\"count\":1185,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 640842819,
+                "userScore": 1,
+                "nickname": "koushik\uD83E\uDD17",
+                "gender": 1,
+                "userLevel": 24,
+                "actorLevel": 6,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/img/portrait/20250521/640842819_0_5af00e52f50a4742b00616befba4dda9.png!128",
+                "desc": "[{\"count\":200,\"desc\":\"Beans\",\"type\":1},{\"count\":2000,\"desc\":\"Gold\",\"type\":102},{\"count\":150,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":200,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":4,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":8,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":1200,\"desc\":\"Gold\",\"type\":102},{\"count\":415,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1600,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":2,\"desc\":\"Sea Wolf Profile Frame\",\"id\":10190,\"type\":6},{\"count\":14850,\"desc\":\"Gold\",\"type\":102},{\"count\":1485,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1500,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Gold Luxury Entrance\",\"id\":1627,\"type\":4},{\"count\":4,\"desc\":\"Victor Audio Theme\",\"id\":100,\"type\":5},{\"count\":2,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":13650,\"desc\":\"Gold\",\"type\":102},{\"count\":1295,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1700,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":14300,\"desc\":\"Gold\",\"type\":102},{\"count\":1500,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1000,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":2,\"desc\":\"Victor Audio Theme\",\"id\":100,\"type\":5},{\"count\":2,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":2,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":8950,\"desc\":\"Gold\",\"type\":102},{\"count\":1190,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1350,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":4,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":11000,\"desc\":\"Gold\",\"type\":102},{\"count\":945,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":350,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":2,\"desc\":\"Sea Wolf Profile Frame\",\"id\":10190,\"type\":6},{\"count\":6,\"desc\":\"SVIP\",\"id\":100004,\"type\":8},{\"count\":1800,\"desc\":\"Gold\",\"type\":102},{\"count\":550,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1600,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Victor Audio Theme\",\"id\":100,\"type\":5},{\"count\":13900,\"desc\":\"Gold\",\"type\":102},{\"count\":1220,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1750,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Spaceship Entrance\",\"id\":1654,\"type\":4},{\"count\":2,\"desc\":\"Gold Luxury Entrance\",\"id\":1627,\"type\":4},{\"count\":2,\"desc\":\"Sea Wolf Profile Frame\",\"id\":10190,\"type\":6},{\"count\":14550,\"desc\":\"Gold\",\"type\":102},{\"count\":1295,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":450,\"desc\":\"Beans\",\"type\":1},{\"count\":2,\"desc\":\"Gold Luxury Entrance\",\"id\":1627,\"type\":4},{\"count\":2,\"desc\":\"Victor Audio Theme\",\"id\":100,\"type\":5},{\"count\":4,\"desc\":\"Orbit Audio theme\",\"id\":10167,\"type\":5},{\"count\":2,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":3200,\"desc\":\"Gold\",\"type\":102},{\"count\":575,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1350,\"desc\":\"Beans\",\"type\":1},{\"count\":4,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":10400,\"desc\":\"Gold\",\"type\":102},{\"count\":990,\"desc\":\"Troops\",\"type\":103}]"
+            },
+            {
+                "userId": 566129456,
+                "userScore": 10,
+                "nickname": "\uD83D\uDE0A ARMAN KHAN \uD83D\uDE0A",
+                "gender": 1,
+                "userLevel": 37,
+                "actorLevel": 9,
+                "liveType": 0,
+                "portrait": "http://img.sklite.live/image/566129456_0_fccdd8e5-ed7e-4f5c-8a46-fc3a1ad474cf.png!128",
+                "desc": "[{\"count\":1100,\"desc\":\"Beans\",\"type\":1},{\"count\":4,\"desc\":\"Orbit Profile Frame\",\"id\":10206,\"type\":6},{\"count\":2,\"desc\":\"Sea Wolf Profile Frame\",\"id\":10190,\"type\":6},{\"count\":8350,\"desc\":\"Gold\",\"type\":102},{\"count\":895,\"desc\":\"Troops\",\"type\":103}]"
+            }
+        ],
+        "pageNum": 1,
+        "pageSize": 20,
+        "pageCount": 2508,
+        "count": 50148
+    }
+}
