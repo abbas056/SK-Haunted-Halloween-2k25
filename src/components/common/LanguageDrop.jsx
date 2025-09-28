@@ -11,12 +11,12 @@ export default function LanguageDrop() {
 
   return (
     <div className="absolute  flex flex-col gap-[0.2vw] z-[1] top-[2vw] right-[2vw]">
-      <button className="border-[0.2vw] border-solid rounded-full flex items-center justify-center gap-[1vw] bg-[#a75830]" onClick={toggleDrop}>
-        <span className="leading-none p-[1vw_2vw] text-[#fff7f5]">{language}</span>
+      <div className="bg-[#9823ae] border-[0.2vw] border-solid rounded-full flex items-center justify-center gap-[1vw]" onClick={toggleDrop}>
+        <span className="leading-none p-2 text-[#fff7f5]">{language}</span>
         <span className={`bg-yellow-400 p-[1vw_2vw] ${isOpen ? "rotate-180 rounded-bl-full rounded-tl-full" : "rounded-br-full rounded-tr-full"}`}>
           ▼
         </span>
-      </button>
+      </div>
       {isOpen ? (
         <div className="bg-[#fff] flex flex-col gap-[1vw]" id="languageDiv">
           {langData?.map((items) => {
