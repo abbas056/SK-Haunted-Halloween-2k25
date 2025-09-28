@@ -73,9 +73,9 @@ function Tab3({ tab }) {
           pointIcon={images.talentPointsIcon}
           pointText={`My Talent Points: ${eventInfo?.gamePoints || 0}`}
           pointTextClassName="text-[white] text-[3vw]"
-          className="flex items-center justify-center px-[5vw]  f-tangoSansItalic gap-1"
+          className="flex items-center justify-center px-[5vw]  f-tangoSansItalic gap-1 relative"
         />
-        <TalentTreetGame />
+        <TalentTreetGame gamePoints={eventInfo?.gamePoints || 0} />
       </Container>
       <Container
         image={images.winnersBg}

@@ -72,9 +72,9 @@ function RestWinners({
         <div>
           <Carousel width="30vw" Infinite>
             {chunkedRewards.map((group, groupIndex) => (
-              <div key={groupIndex} className="w-[29vw] flex items-center justify-end gap-[1vw]">
+              <div key={groupIndex} className="w-[29vw] flex items-center justify-start gap-[1vw]">
                 {group.map((item, index) => (
-                  <div key={index} className="w-[9vw] flex flex-col items-center justify-center gap-[1vw]">
+                  <div key={index} className="w-[7vw] flex flex-col items-center justify-center gap-[1vw]">
                     <img className="w-[6vw] h-[6vw] object-contain" src={rewGet(item?.desc)} alt="" />
                     <span className="whitespace-nowrap text-[2vw] leading-none">{getCountDays(item?.desc, item?.count)}</span>
                   </div>

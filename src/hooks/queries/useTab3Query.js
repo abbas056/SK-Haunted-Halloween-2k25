@@ -4,7 +4,6 @@ import { fetchEventRecordsTab3, fetchTalentGameTab3, fetchWinnersDataTab3 } from
 // Talent Game Tab 3
 export const useTalentGameTab3 = () => {
   const queryClient = useQueryClient();
-
   const { mutate, data, isPending, isError, error } = useMutation({
     mutationFn: ({ playCount, requestHeader }) => fetchTalentGameTab3(playCount, requestHeader),
     onSuccess: () => {

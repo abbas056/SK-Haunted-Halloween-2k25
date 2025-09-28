@@ -1,7 +1,6 @@
 import { images } from "../assets";
 import { useToastStore } from "../store/popUpStore";
 import { baseURL } from "../URL";
-const { openToast } = useToastStore();
 
 function convertToMultiplierText(input) {
   const match = input.match(/(\d+(?:\.\d+)?)%/); // handles 40% or 40.5%
@@ -550,6 +549,8 @@ export const dummRanks = {
   },
 };
 export function openShortPage() {
+  const { openToast } = useToastStore();
+
   try {
     var href = "streamkar://m.streamkar.com/route/home?index=1";
     openToast("success");
@@ -561,3 +562,62 @@ export function openShortPage() {
     location.href = "streamkar://m.streamkar.com/route/home?index=1";
   }
 }
+
+export const houseArray = [
+  {
+    id: 1,
+    house: images.house1,
+    width: " 20vw",
+    height: " 35vw",
+    left: " 18vw",
+    top: " 1vw",
+  },
+  {
+    id: 2,
+    house: images.house2,
+    width: " 20vw",
+    height: " 35vw",
+    right: "17vw",
+    top: "13vw",
+  },
+  {
+    id: 3,
+    house: images.house3,
+    width: " 20vw",
+    height: " 35vw",
+    left: "12vw",
+    top: "40vw",
+  },
+  {
+    id: 4,
+    house: images.house4,
+    width: " 20vw",
+    height: " 35vw",
+    right: "5vw",
+    top: "60vw",
+  },
+  {
+    id: 5,
+    house: images.house5,
+    width: " 20vw",
+    height: " 35vw",
+    left: "10vw",
+    top: "83vw",
+  },
+  {
+    id: 6,
+    house: images.house6,
+    width: " 20vw",
+    height: " 35vw",
+    right: "8vw",
+    bottom: "40vw",
+  },
+  {
+    id: 7,
+    house: images.house7,
+    width: " 20vw",
+    height: " 35vw",
+    left: "19vw",
+    bottom: "27vw",
+  },
+];

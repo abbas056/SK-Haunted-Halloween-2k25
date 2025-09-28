@@ -35,11 +35,7 @@ function HauntedHouseGame({ gamePoints }) {
         const itemMsg = playGameResponse?.data?.itemMsg || [];
         const treatPoints = playGameResponse?.data?.treatPoints || [];
         const hauntedResult = Object.keys(playGameResponse?.data?.hauntedResult).length;
-
-        // Set item name first to update door status
         setItemName(itemMsg);
-
-        // Add a small delay to show the door animation before popup
         setTimeout(() => {
           if (combo === 1) {
             openPopUp(

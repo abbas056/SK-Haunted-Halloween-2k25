@@ -32,30 +32,6 @@ const Rewards = ({ rewards }) => {
   );
 };
 export const popupsEndpoint = {
-  tab2Popups: {
-    singleShotSuccess: {
-      title: images.beautfulBloom,
-      description: ({ rewards }) => (
-        <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
-          You’ve successfully bloomed the petals{" "}
-          <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.flowerIcon} alt="" /> and have won{" "}
-          <Rewards rewards={convertToPaginatedArray(rewards, 3)} />
-        </span>
-      ),
-    },
-    insufficientPoints: {
-      title: images.oopsTitle,
-      description: (
-        <div className="h-full flex flex-col items-center justify-center">
-          <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
-            You don’t have enough Talent Points{" "}
-            <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.talentPointsIcon} alt="" /> to bloom petals right
-            now. Receive more event gifts to earn Talent Points and try again!
-          </span>
-        </div>
-      ),
-    },
-  },
   tab1Popups: {
     singleShotSuccess: {
       title: images.titleDoorUnlock,
@@ -99,6 +75,30 @@ export const popupsEndpoint = {
           <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.chestOpenIcon} alt="" /> and received the Bonus Grand
           Reward <Rewards rewards={convertToPaginatedArray(rewards, 3)} />
         </span>
+      ),
+    },
+  },
+
+  tab3Popups: {
+    successShot: {
+      title: images.titleCongratulations,
+      description: ({ rewards }) => (
+        <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
+          You have successfully got treats from the Halloween house and you have won
+          <Rewards rewards={convertToPaginatedArray(rewards, 3)} />
+        </span>
+      ),
+    },
+    insufficientPoints: {
+      title: images.titleOops,
+      description: (
+        <div className="h-full flex flex-col items-center justify-center">
+          <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
+            You don’t have enough talent points
+            <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.treatPointsIcon} alt="" /> right now, get more event
+            gifts to get talent points and come back again
+          </span>
+        </div>
       ),
     },
   },
