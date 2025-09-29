@@ -6,11 +6,11 @@ export const useTalentGameTab3 = () => {
   const queryClient = useQueryClient();
   const { mutate, data, isPending, isError, error } = useMutation({
     mutationFn: ({ playCount, requestHeader }) => fetchTalentGameTab3(playCount, requestHeader),
-    onSuccess: () => {
+    onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ["talentGameTab3"] });
       // Refetching the Query after the game Update
       queryClient.invalidateQueries({ queryKey: ["winnersDataTab3"] });
-      queryClient.invalidateQueries({ queryKey: ["eventInfo"] });
+      // queryClient.invalidateQueries({ queryKey: ["eventInfo"] });
       // The Component is unmounted, so need to remove the cached data
       queryClient.removeQueries({ queryKey: ["eventRecordsTab3"] });
     },

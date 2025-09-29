@@ -621,3 +621,65 @@ export const houseArray = [
     bottom: "27vw",
   },
 ];
+export const checkpoints = [0, 3, 6, 8, 9, 10, 11, 12];
+export const talentPath = [
+  {
+    x: 43,
+    y: 0,
+  },
+  {
+    x: 33,
+    y: 3,
+  },
+  {
+    x: 47,
+    y: 7,
+  },
+  // index 1
+  {
+    x: 33,
+    y: 11,
+  },
+  {
+    x: 49,
+    y: 18,
+  },
+  {
+    x: 29,
+    y: 26,
+  },
+  // index 2
+  {
+    x: 54,
+    y: 36,
+  },
+  {
+    x: 47,
+    y: 43,
+  },
+  // index 3
+  {
+    x: 27,
+    y: 51,
+  },
+  //index 4
+  {
+    x: 66,
+    y: 73,
+  },
+  // index 5
+  {
+    x: 18,
+    y: 95,
+  },
+  // index 6
+  {
+    x: 63,
+    y: 133,
+  },
+  // index 7
+  {
+    x: 30,
+    y: 153,
+  },
+];

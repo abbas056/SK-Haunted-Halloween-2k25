@@ -172,5 +172,7 @@ export const images = {
   gems: new URL("./images/gems.png", import.meta.url).href,
   unknown: new URL("./images/unknown.png", import.meta.url).href,
 
-  animations: {},
+  animations: {
+    mascotAnimation: new URL("./images/talent-mascot.gif", import.meta.url).href,
+  },
 };

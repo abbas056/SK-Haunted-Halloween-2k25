@@ -51,8 +51,8 @@ const endpoints = {
   tab2: {
     sentTodayRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=15&pageNum=1&pageSize=20&dayIndex=${currentDate}`,
     sentPrevRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=15&pageNum=1&pageSize=20&dayIndex=${previousDate}`,
-    receivedTodayRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=15&pageNum=1&pageSize=20&dayIndex=${currentDate}`,
-    receivedPrevRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=15&pageNum=1&pageSize=20&dayIndex=${previousDate}`,
+    receivedTodayRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=16&pageNum=1&pageSize=20&dayIndex=${currentDate}`,
+    receivedPrevRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=16&pageNum=1&pageSize=20&dayIndex=${previousDate}`,
     streamUser: `/meShow/entrance?parameter=%7B%22platform%22%3A2%2C%22a%22%3A1%2C%22c%22%3A12002%2C%22v%22%3A1224%2C%22l%22%3A%22en%22%2C%22FuncTag%22%3A20010302%2C%22cataId%22%3A1275%2C%22area%22%3A0%2C%22start%22%3A0%2C%22offset%22%3A2%7D`,
   },
   tab3: {

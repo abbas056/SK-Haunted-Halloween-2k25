@@ -5,7 +5,7 @@ var user;
 if (enviroment === "test") {
   user = {
     uid: 596492375,
-    token: "A16DD06ADB0A3E467A9BCF2FDAD698F53A",
+    token: "A188677A019A7946A3A92297FB9B673A36",
   };
   baseURL = "http://test.stkar.com";
 } else {
