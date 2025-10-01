@@ -11,7 +11,7 @@ function ChestBox({ value }) {
   const { openPopUp } = usePopUpStore();
   const { user } = useUserStore();
   const [openChestBox, setOpenChestBox] = useState(false);
-  const { mutate: claimChest, data: claimChestResponse, isLoading } = useClaimChestTab1();
+  const { mutate: claimChest, data: claimChestResponse, isPending, status } = useClaimChestTab1();
   const {
     tab1Popups: { openChest, insufficientPoints },
   } = popupsEndpoint;
@@ -24,20 +24,18 @@ function ChestBox({ value }) {
       if (errorCode === 0) {
         // First, open the chest box to show animation
         setOpenChestBox(true);
-
         const rewards = claimChestResponse?.data?.rewardList || [];
-
         // Wait for chest opening animation before showing popup
         setTimeout(() => {
           openPopUp(
             <GamePopups
               titleImage={openChest.title}
               popupTitleClass="absolute top-0 w-[60%]"
-              backgroundImage={images.mediumBg}
+              backgroundImage={images.smallBg}
               size="100% 100%"
               width="100%"
               height="100vw"
-              className="relative flex items-center justify-center h-[100vw] text-white"
+              className="relative flex items-center justify-center h-[70vw] text-white"
             >
               {openChest.description({ rewards })}
             </GamePopups>
@@ -106,8 +104,8 @@ function ChestBox({ value }) {
           {value}/50
         </Container>
       </Container>
-      <button disabled={value < 50 || isLoading} className={`w-[50%] h-[12vw] `} onClick={handleClaimChest}>
-        <img className={`w-[95%] h-[12vw]  ${value < 50 || isLoading ? "grayscale" : ""} `} src={images.collectRewsButton} alt="Collect Rewards" />
+      <button disabled={value < 50 || isPending} className={`w-[50%] h-[12vw] ${isPending ? "grayscale" : ""}`} onClick={handleClaimChest}>
+        <img className={`w-[95%] h-[12vw] ${value < 50 || isPending ? "grayscale" : ""}`} src={images.collectRewsButton} alt="Collect Rewards" />
       </button>
     </div>
   );

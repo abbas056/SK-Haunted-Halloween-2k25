@@ -11,25 +11,32 @@ export default function LanguageDrop() {
 
   return (
     <div className="absolute  flex flex-col gap-[0.2vw] z-[1] top-[2vw] right-[2vw]">
-      <div className="bg-[#9823ae] border-[0.2vw] border-solid rounded-full flex items-center justify-center gap-[1vw]" onClick={toggleDrop}>
+      <div
+        className="bg-[#9823ae] border-[0.2vw] border-solid rounded-full flex items-center justify-center gap-[1vw] text-[2.5vw]"
+        onClick={toggleDrop}
+      >
         <span className="leading-none p-2 text-[#fff7f5]">{language}</span>
-        <span className={`bg-yellow-400 p-[1vw_2vw] ${isOpen ? "rotate-180 rounded-bl-full rounded-tl-full" : "rounded-br-full rounded-tr-full"}`}>
+        <span
+          className={`bg-yellow-400 p-[1vw_2vw] text-[3.5vw] ${
+            isOpen ? "rotate-180 rounded-bl-full rounded-tl-full" : "rounded-br-full rounded-tr-full"
+          }`}
+        >
           ▼
         </span>
       </div>
       {isOpen ? (
-        <div className="bg-[#fff] flex flex-col gap-[1vw]" id="languageDiv">
+        <div className="bg-[#fff] flex flex-col gap-[1vw] text-[2.5vw]" id="languageDiv ">
           {langData?.map((items) => {
             return (
-              <button
-                className={language === items?.key ? "p-[1.5vw] bg-[#a75830] text-[#fff7f5]" : "p-[1.5vw] text-[#000]"}
+              <div
+                className={language === items?.key ? "p-[1vw] bg-[#a75830] text-[#fff7f5]" : "p-[1vw] text-[#000]"}
                 onClick={() => {
                   setLanguage(items?.key);
                   setisOpen(!isOpen);
                 }}
               >
                 {items?.key}
-              </button>
+              </div>
             );
           })}
         </div>

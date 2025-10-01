@@ -12,7 +12,7 @@ export const event_gift = [
     price: "25k",
   },
   {
-    desc: "Crossbones",
+    desc: "Cross Bones",
     price: "10K",
   },
   {

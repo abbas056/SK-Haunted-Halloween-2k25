@@ -66,14 +66,14 @@ export default function Tab2({ tab, setTabs }) {
     axios
       .get(`https://api.kktv9.com/api/activity/topRank/getTopRankByRegion?pageCount=10&pageIndex=0&rankType=0&userType=2&cityId=0`)
       .then((response) => {
-        setRandomUser(response.data);
+        setRandomUser(response?.data?.data);
       })
       .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
-    if (randomUser) {
-      const randomIndex = Math?.floor(Math?.random() * randomUser?.length);
+    if (randomUser?.length > 0) {
+      const randomIndex = Math.floor(Math.random() * randomUser.length);
       const random = randomUser[randomIndex];
       setSelectedUserId(random?.userId);
     }
@@ -95,7 +95,7 @@ export default function Tab2({ tab, setTabs }) {
             Amazing Rewards{" "}
           </span>
         </Container>
-        <DailyTasksSection setTabs={setTabs} streamId={stream && stream[1]?.userId} randomUserId={selectedUserId} isLive={false} />
+        <DailyTasksSection setTabs={setTabs} streamId={stream && stream[1]?.userId} randomUserId={selectedUserId} isLive={true} />
       </Container>
       <Board
         tab={tab}

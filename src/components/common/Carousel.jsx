@@ -105,7 +105,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
           </button>
         )}
         <div
-          className="flex items-center overflow-x-hidden"
+          className="flex items-center overflow-hidden"
           style={{
             width: width,
             height: height,

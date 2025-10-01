@@ -44,8 +44,8 @@ export default function PopUpWrapper({
         className={`relative w-full flex flex-col items-center justify-center py-20`}
       >
         {titleImage && <img className={popupTitleClass} src={titleImage} />}
-        <div className={`w-[73%] overflow-y-auto overflow-x-hidden ${className}`}>{children}</div>
-        <img className={"absolute top-[-6vw] right-[5vw] w-[8vw] z-[999] " + popupCloseClass} src={images.closeIcon} onClick={onCloseClick} />
+        <div className={`w-[73%]  ${className}`}>{children}</div>
+        <img className={"absolute top-[-5vw] right-[3vw] w-[8vw] z-[999] " + popupCloseClass} src={images.closeIcon} onClick={onCloseClick} />
       </Container>
     </div>
   );

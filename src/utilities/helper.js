@@ -225,7 +225,7 @@ export const doorsArray = [
     closeDoor: images.closedDoor3,
     doorNumber: images.doorNum3,
     shine: images.shine,
-    itemName: "Witch's Hat",
+    itemName: "Witch’s Hat",
     width: "18vw",
     height: "28vw",
     left: "33vw",
@@ -549,17 +549,11 @@ export const dummRanks = {
   },
 };
 export function openShortPage() {
-  const { openToast } = useToastStore();
-
+  const href = "streamkar://m.streamkar.com/route/home?index=1";
   try {
-    var href = "streamkar://m.streamkar.com/route/home?index=1";
-    openToast("success");
-    //window.phone.goToActivityWeb("Test ",href);
     window.phone.routeViewPage(href);
-  } catch (_error) {
-    console.error(_error);
-    openToast("Open page error..." + _error);
-    location.href = "streamkar://m.streamkar.com/route/home?index=1";
+  } catch (err) {
+    window.location.href = href;
   }
 }
 

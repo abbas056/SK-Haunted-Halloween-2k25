@@ -114,6 +114,14 @@ export const images = {
   spookyPointsIcon: new URL("./images/popup-assets/icons/spookyPointsIcon.png", import.meta.url).href,
   talentPointsIcon: new URL("./images/popup-assets/icons/talentPointsIcon.png", import.meta.url).href,
   treatPointsIcon: new URL("./images/popup-assets/icons/treatPointsIcon.png", import.meta.url).href,
+  iconPumpkin: new URL("./images/popup-assets/icons/iconPumpkin.png", import.meta.url).href,
+  iconSkeletonHand: new URL("./images/popup-assets/icons/iconSkeletonHand.png", import.meta.url).href,
+  iconWitchHat: new URL("./images/popup-assets/icons/iconWitchHat.png", import.meta.url).href,
+  iconBloodyMask: new URL("./images/popup-assets/icons/iconBloodyMask.png", import.meta.url).href,
+  iconCandy: new URL("./images/popup-assets/icons/iconCandy.png", import.meta.url).href,
+  iconLantern: new URL("./images/popup-assets/icons/iconLantern.png", import.meta.url).href,
+  iconMagicPotion: new URL("./images/popup-assets/icons/magicPotion.png", import.meta.url).href,
+
   // popup buttons
   detailBtn: new URL("./images/popup-assets/buttons/detailBtn.png", import.meta.url).href,
   talentBtn: new URL("./images/popup-assets/buttons/talentBtn.png", import.meta.url).href,

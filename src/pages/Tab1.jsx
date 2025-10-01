@@ -33,13 +33,13 @@ export default function Tab1({ tab }) {
               backgroundImage={images.largeBg}
               titleImage={images.titleDetails}
               onCloseClick={closePopUp}
-              popUpHeight="180vw"
+              popUpHeight="160vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[25vw] object-contain z-[9] absolute top-[-5vw]"
-              popupCloseClass="w-[10vw] h-[10vw] object-contain"
-              className="h-[140vw] "
+              popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[140vw] overflow-y-auto overflow-x-hidden"
             >
               <span className="m-auto text-[2.5vw] text-center text-white flex justify-center mb-2">
                 EACH PLAYER USERS WILL GET <br />
@@ -60,13 +60,13 @@ export default function Tab1({ tab }) {
               backgroundImage={images.largeBg}
               titleImage={images.titleRecords}
               onCloseClick={closePopUp}
-              popUpHeight="185vw"
+              popUpHeight="165vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[25vw] object-contain z-[9] absolute top-[-5vw]"
-              popupCloseClass="w-[10vw] h-[10vw] object-contain"
-              className="h-[140vw] mt-[10vw]"
+              popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[140vw] mt-[5vw] overflow-y-auto overflow-x-hidden"
             >
               <RecordPopupTabOne />
             </PopUpWrapper>
@@ -79,9 +79,10 @@ export default function Tab1({ tab }) {
         width="55%"
         height="17vw"
         pointIcon={images.mySpookyPointsIcon}
-        pointText={`My Spooky Points: ${eventInfo?.gamePoints || 0}`}
-        pointTextClassName="text-[white] text-[3vw]"
-        className="flex items-center justify-center px-[5vw] pt-[2vw] pb-[4vw]  f-tangoSansItalic m-auto gap-1"
+        pointText={`My Spooky Points:`}
+        points={eventInfo?.gamePoints || 0}
+        pointTextClassName="text-[white] text-[3vw] leading-3.5"
+        className="flex items-center justify-start px-[5vw] pt-[2vw] pb-[4vw]  f-tangoSansItalic m-auto gap-0.5"
       />
       <Container
         className="relative flex flex-col justify-start items-center pb-[8vw]"
@@ -89,17 +90,18 @@ export default function Tab1({ tab }) {
         width="100%"
         size="100% 100%"
       >
-        <img className=" w-[70%]" src={images.hauntedHouseTitle} alt="" />
+        <img className=" w-[80%] mb-[-5vw]" src={images.hauntedHouseTitle} alt="" />
         <HauntedHouseGame key={1} gamePoints={eventInfo?.gamePoints || 0} />
         <ChestBox value={eventInfo?.collectItems || 0} />
         <PointGame
           background={images.myDailyTreatPointsBg}
-          width="55%"
+          width="60%"
           height="17vw"
           pointIcon={images.myDailyTreatPointsIcon}
-          pointText={`My Daily Treat Points: ${eventInfo?.dailyTreatPoints || 0}`}
-          pointTextClassName="text-[white] pt-2 text-[3vw]"
-          className="flex items-center justify-center px-[8vw] pt-[2vw] pb-[4vw]  f-tangoSansItalic m-auto gap-1"
+          pointText={`My Daily Treat Points:`}
+          points={eventInfo?.dailyTreatPoints || 0}
+          pointTextClassName="text-[white] text-[3vw] leading-3.5"
+          className="flex items-center justify-start px-[6vw] pt-[2vw] pb-[2vw] f-tangoSansItalic m-auto gap-0.5"
         />
       </Container>
       <Board

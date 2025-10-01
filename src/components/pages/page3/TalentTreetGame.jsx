@@ -81,7 +81,7 @@ function TalentTreetGame() {
                         size="100% 100%"
                         width="100%"
                         height="100vw"
-                        className="relative flex items-center justify-center h-[100vw] text-white"
+                        className="relative flex items-center justify-center h-[90vw] text-white"
                       >
                         {successShot.description({ rewards })}
                       </GamePopups>
@@ -103,7 +103,7 @@ function TalentTreetGame() {
                       size="100% 100%"
                       width="100%"
                       height="100vw"
-                      className="relative flex items-center justify-center h-[100vw] text-white"
+                      className="relative flex items-center justify-center h-[90vw] text-white"
                     >
                       {successShot.description({ rewards })}
                     </GamePopups>
@@ -127,7 +127,7 @@ function TalentTreetGame() {
                   size="100% 100%"
                   width="100%"
                   height="100vw"
-                  className="relative flex items-center justify-center h-[100vw] text-white"
+                  className="relative flex items-center justify-center h-[60vw] text-white"
                 >
                   {insufficientPoints.description}
                 </GamePopups>
@@ -142,7 +142,7 @@ function TalentTreetGame() {
                   size="100% 100%"
                   width="100%"
                   height="100vw"
-                  className="relative flex items-center justify-center h-[100vw] text-white"
+                  className="relative flex items-center justify-center h-[60vw] text-white"
                 >
                   {errorMessage}
                 </GamePopups>
@@ -159,7 +159,6 @@ function TalentTreetGame() {
       {houseArray?.map((house, index) => {
         // Check if this house should be colored (visited)
         const isVisited = talentTreatIndex >= index + 1;
-
         return (
           <img
             key={house.id}
@@ -189,7 +188,6 @@ function TalentTreetGame() {
         src={animatingMascot.image}
         alt="Mascot"
       />
-
       <GameControls
         combo={combo}
         setCombo={setCombo}

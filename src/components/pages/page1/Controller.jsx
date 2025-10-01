@@ -10,10 +10,10 @@ export default function Controller({ handleGameClick, combo, setCombo, max, isLo
   return (
     <div className="w-[85vw] flex items-end justify-center  text-amber-50">
       <div className="w-[30vw] shrink-0 flex flex-col justify-center items-center gap-1">
-        <Container image={images.speedBase} width="20vw" height="10vw" size="100% 100%" className="flex items-center justify-center p-3">
+        <Container image={images.speedBase} width="20vw" height="10vw" size="100% 100%" className="flex items-center justify-center p-3 text-[3.5vw]">
           x{" "}
           <input
-            className="ml-[1vw] w-[8vw] bg-transparent text-[#ffebb3] placeholder:text-[#ffebb389] outline-none text-shadow"
+            className="ml-[1vw] w-[8vw] bg-transparent text-white placeholder:text-[#ffebb389] outline-none text-shadow"
             type="number"
             placeholder="1"
             value={combo}

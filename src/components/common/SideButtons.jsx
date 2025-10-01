@@ -24,13 +24,13 @@ export default function SideButtons({}) {
               backgroundImage={images.largeBg}
               titleImage={images.titleEventGifting}
               onCloseClick={closePopUp}
-              popUpHeight="185vw"
+              popUpHeight="165vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[22vw] object-contain z-[9] absolute top-[-4vw]"
-              popupCloseClass="w-[7vw] h-[7vw] object-contain top-[-5vw]"
-              className="h-[140vw] mt-[-5vw] "
+              popupTitleClass="w-[70%] z-[9] absolute top-[-8vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[140vw] overflow-y-auto overflow-x-hidden"
             >
               <EventGifting />
             </PopUpWrapper>
@@ -47,13 +47,13 @@ export default function SideButtons({}) {
               backgroundImage={images.largeBg}
               titleImage={images.titleGuide}
               onCloseClick={closePopUp}
-              popUpHeight="180vw"
+              popUpHeight="165vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[22vw] object-contain z-[9] absolute top-[-8vw]"
-              popupCloseClass="w-[7vw] h-[7vw] object-contain"
-              className="h-[140vw] mt-[-5vw] "
+              popupTitleClass="w-[70%] z-[9] absolute top-[-8vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[140vw] overflow-y-auto overflow-x-hidden"
             >
               <RewardContainer rewards={event_gift} singleList />
               <Guide />

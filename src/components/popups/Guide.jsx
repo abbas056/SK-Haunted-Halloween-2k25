@@ -39,7 +39,7 @@ import { images } from "../../assets/index";
 const GuideContentWithoutTable = ({ data, index }) => {
   const [isOpen, setOpen] = useState(false);
   useEffect(() => {
-    if (index === 0) {
+    if (index === 1) {
       setOpen(true);
     }
   }, [index]);

@@ -32,9 +32,9 @@ function Tab3({ tab }) {
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[25vw] object-contain z-[9] absolute top-[-5vw]"
-              popupCloseClass="w-[10vw] h-[10vw] object-contain"
-              className="h-[140vw] pt-[15vw] pb-[18vw] "
+              popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[80vw] pt-[10vw] pb-[10vw] overflow-hidden"
             >
               <DetailPopUp tab={3} />
             </PopUpWrapper>
@@ -48,16 +48,16 @@ function Tab3({ tab }) {
         onClick={() =>
           openPopUp(
             <PopUpWrapper
-              backgroundImage={images.mediumBg}
+              backgroundImage={images.largeBg}
               titleImage={images.titleRecords}
               onCloseClick={closePopUp}
-              popUpHeight="120vw"
+              popUpHeight="165vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
-              popupTitleClass="w-full h-[25vw] object-contain z-[9] absolute top-[-5vw]"
-              popupCloseClass="w-[10vw] h-[10vw] object-contain"
-              className="h-[60vw] mt-10"
+              popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
+              popupCloseClass="w-[8vw] h-[8vw]"
+              className="h-[125vw] mt-[5vw] overflow-y-auto overflow-x-hidden"
             >
               <RecordPopupTabThree />
             </PopUpWrapper>
@@ -71,9 +71,10 @@ function Tab3({ tab }) {
           width="55%"
           height="22vw"
           pointIcon={images.talentPointsIcon}
-          pointText={`My Talent Points: ${eventInfo?.gamePoints || 0}`}
-          pointTextClassName="text-[white] text-[3vw]"
-          className="flex items-center justify-center px-[5vw]  f-tangoSansItalic gap-1 relative"
+          pointText={`My Talent Points:`}
+          points={eventInfo?.gamePoints || 0}
+          pointTextClassName="text-[white] text-[3vw] leading-3.5"
+          className="flex items-center justify-start px-[5vw] f-tangoSansItalic gap-0.5 relative"
         />
         <TalentTreetGame gamePoints={eventInfo?.gamePoints || 0} />
       </Container>

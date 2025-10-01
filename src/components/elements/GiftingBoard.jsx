@@ -76,9 +76,7 @@ const Gifter_TALENTBoard = ({
   overallTalentData,
 }) => {
   const [timeTab, setTimeTab] = useState(images.dailyBtn);
-
   const { eventInfo } = useOverallQuery();
-
   const estBeans = {
     talent: {
       todayEst: (eventInfo && eventInfo?.beansPotInfo && eventInfo?.beansPotInfo?.[`DAILY_GEMS_${currentDate}`]) || 0,

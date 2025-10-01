@@ -17,9 +17,18 @@ export default function RewardHistory({
   rechargeIndex,
   setPageIndexRecharge,
 }) {
+  const itemsName = {
+    1: "Pumpkin",
+    2: "Candy",
+    3: "Witch’s Hat",
+    4: "Ghost Lantern",
+    5: "Bloody Mask",
+    6: "Skeleton Hand",
+    7: "Magic potion",
+  };
   return (
     <>
-      <div className="w-[95%] max-h-[60vw] overflow-y-auto  mx-auto rounded-[2vw] border-[0.4vw] border-[#fff] overflow-hidden text-white">
+      <div className="w-[95%] max-h-[100vw] overflow-y-auto  mx-auto rounded-[2vw] border-[0.4vw] border-[#fff] overflow-hidden text-white">
         <Table className="w-full">
           <TableHead className="w-full">
             <TableRow className="w-full bg-[#922caf]">
@@ -50,10 +59,17 @@ export default function RewardHistory({
                   {tab === 1 && (
                     <>
                       <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
-                        {item?.map?.animalMsg || 0}
+                        {Object.entries(item?.map).map(([key, value]) => {
+                          if (key === "treatPoints") return null; // skip treatPoints
+                          return (
+                            <span key={key}>
+                              {itemsName[key]} x{value} +{" "}
+                            </span>
+                          );
+                        })}
                       </TableData>
                       <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
-                        {item?.map?.score || 0}
+                        {item?.map?.treatPoints || 0}
                       </TableData>
                     </>
                   )}

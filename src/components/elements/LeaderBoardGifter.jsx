@@ -26,7 +26,7 @@ export default function LeaderBoardGifter({ data, talent, percentage, estemated,
         beans={estemated}
         talent={talent}
         width="100%"
-        height="140vw"
+        height="145vw"
         data={restData}
         count={data?.count}
       />

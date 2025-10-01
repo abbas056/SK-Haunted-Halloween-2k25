@@ -7,7 +7,7 @@ import { rewGet } from "./imageContext";
 const Reward = ({ desc, count, textCss }) => {
   return (
     <span className="flex flex-col items-center gap-[1vw]">
-      <Container image={images.rewardsBg} size="100% 100%" width="15vw" height="15vw" className="flex items-center justify-center px-3 pt-3 pb-1">
+      <Container image={images.rewardsBg} size="100% 100%" width="16vw" height="16vw" className="flex items-center justify-center px-3 pt-3 pb-1">
         <div className="flex flex-col items-center justify-center">
           <img className="z-10 w-[10vw] h-[10vw] object-contain" src={rewGet(desc)} alt="" />
         </div>
@@ -22,7 +22,7 @@ const Rewards = ({ rewards }) => {
   return (
     <Carousel width="60vw" className="w-full mt-[3vw]" Infinite arrows>
       {rewards?.map((data, index) => (
-        <div key={index} className="flex items-start justify-center gap-[2vw]">
+        <div key={index} className="flex items-start justify-center gap-[2vw] mb-3">
           {data?.map((reward, index) => (
             <Reward key={index} desc={reward?.desc} count={reward?.count} textCss={"text-[#ffcd00]"} />
           ))}
@@ -35,9 +35,10 @@ export const popupsEndpoint = {
   tab1Popups: {
     singleShotSuccess: {
       title: images.titleDoorUnlock,
-      description: ({ treatPoints, itemMsg, rewards }) => (
+      description: ({ treatPoints, formattedMsg, rewards }) => (
         <span className="px-[2vw] text-[4vw] leading-[6vw] text-white">
-          You have unlocked a haunted door and found a <span className="text-[#ffcd00]">{itemMsg}</span> <br />. You have also won
+          You have unlocked a haunted door and found a {formattedMsg} <br />
+          You have also won
           <Rewards rewards={convertToPaginatedArray(rewards, 3)} /> and earned {treatPoints}{" "}
           <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.treatPointsIcon} alt="" /> Treat Points.
         </span>
@@ -45,12 +46,10 @@ export const popupsEndpoint = {
     },
     multiplePlay: {
       title: images.titleGreatFind,
-      description: ({ treatPoints, itemMsg, rewards, hauntedResult }) => (
+      description: ({ treatPoints, formattedMsg, rewards, hauntedResult }) => (
         <span className="px-[2vw] text-[4vw] leading-[6vw] text-white">
-          You have unlocked <span className="text-[#ffcd00]">{hauntedResult}</span> haunted doors and discovered{" "}
-          <span className="text-[#ffcd00]">{itemMsg}</span>
-          <br />. You have also won <Rewards rewards={convertToPaginatedArray(rewards, 3)} /> and earned{" "}
-          <span className="text-[#ffcd00]">{treatPoints}</span>{" "}
+          You have unlocked <span className="text-[#ffcd00]">{hauntedResult}</span> haunted doors and discovered {formattedMsg} <br />
+          You have also won <Rewards rewards={convertToPaginatedArray(rewards, 3)} /> and earned <span className="text-[#ffcd00]">{treatPoints}</span>{" "}
           <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.treatPointsIcon} alt="" /> Treat Points.
         </span>
       ),
@@ -60,7 +59,7 @@ export const popupsEndpoint = {
       description: (
         <div className="h-full flex flex-col items-center justify-center">
           <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
-            You don’t have enough Spooky Points
+            You don’t have enough Spooky Points{" "}
             <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.spookyPointsIcon} alt="" /> to play right now. Send
             to open a haunted door right now. Send more event gifts & come back again!
           </span>
@@ -71,7 +70,7 @@ export const popupsEndpoint = {
       title: images.titleChestOpen,
       description: ({ rewards }) => (
         <span className="px-[2vw] text-[4vw] leading-[6vw] text-white">
-          You have opened the haunted chest{" "}
+          You have opened the <span className="text-[#ffcd00]">haunted chest</span>{" "}
           <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.chestOpenIcon} alt="" /> and received the Bonus Grand
           Reward <Rewards rewards={convertToPaginatedArray(rewards, 3)} />
         </span>

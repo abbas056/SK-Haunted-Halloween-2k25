@@ -14,9 +14,10 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
   const myDailyTasks = eventInfo?.taskInfoList || [];
   const myDailyCandySent = (eventInfo && eventInfo?.beansPotInfo?.[`DAILY_CANDY_SEND_${currentDate}`]) || 0;
   const myDailyCandyReceived = (eventInfo && eventInfo?.beansPotInfo?.[`DAILY_CANDY_RECEIVED_${currentDate}`]) || 0;
+  console.log(myDailyCandyReceived);
 
   const redirectTo = (index) => {
-    if (index === 1) {
+    if (index === 0) {
       setTabs({ tab1: true });
       setTimeout(() => {
         const el = document.getElementById("haunted-house-game");
@@ -24,13 +25,13 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }, 100);
-    } else if (index === 2 || (index === 3) | (index === 4)) {
+    } else if (index === 1 || (index === 2) | (index === 3)) {
       goTo(isLive, streamId, streamId);
-    } else if (index === 5) {
+    } else if (index === 4) {
       gotToTopUp();
-    } else if (index === 6) {
+    } else if (index === 5) {
       goTo(isLive, randomUserId, randomUserId);
-    } else if (index === 7) {
+    } else if (index === 6) {
       openShortPage();
     }
   };
@@ -53,7 +54,7 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
               disabled={task.isComplete}
               className="w-[10%] h-[8vw]"
               onClick={() => {
-                redirectTo(index + 1);
+                redirectTo(index);
               }}
             >
               <img className={`w-[8vw] h-[8vw] ${task.isComplete ? "grayscale" : ""}`} src={images.goBtn} alt="Go" />
@@ -78,7 +79,7 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
           height="14vw"
           pointIcon={images.myDailyCandySentIcon}
           pointText={`My Daily Candy Treat Sent: ${myDailyCandySent}`}
-          pointTextClassName="text-[white] text-[2.2vw]"
+          pointTextClassName="text-[white] text-[2.5vw] leading-2.5 text-left"
           className="flex items-center justify-center px-4 f-tangoSansItalic m-auto"
         />
         <PointGame
@@ -87,7 +88,7 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
           height="14vw"
           pointIcon={images.mMyDailyCandyReceivedIcon}
           pointText={`My Daily Candy Treat Received: ${myDailyCandyReceived}`}
-          pointTextClassName="text-[white] text-[2.2vw]"
+          pointTextClassName="text-[white] text-[2.5vw] leading-2.5 text-left"
           className="flex items-center justify-center px-4 f-tangoSansItalic m-auto"
         />
       </div>

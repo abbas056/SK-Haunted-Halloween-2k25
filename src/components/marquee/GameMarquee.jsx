@@ -2,7 +2,7 @@ import React from "react";
 import SingleMarquee from "./SingleMarquee";
 import Marquee from "react-fast-marquee";
 
-export default function GameMarquee({ data }) {
+export default function GameMarquee({ data, tabs }) {
   const sliceData = data?.slice(0, 3);
 
   return (
@@ -10,7 +10,15 @@ export default function GameMarquee({ data }) {
       {sliceData?.length > 0 && (
         <Marquee gradient={false} speed={80}>
           {sliceData?.map((d, i) => (
-            <SingleMarquee key={i} ranking={i + 1} image={d?.portrait && d?.portrait} score={d.userScore} userId={d.userId} name={d?.nickname} />
+            <SingleMarquee
+              key={i}
+              ranking={i + 1}
+              image={d?.portrait && d?.portrait}
+              score={d.userScore}
+              userId={d.userId}
+              name={d?.nickname}
+              tabs={tabs}
+            />
           ))}
         </Marquee>
       )}

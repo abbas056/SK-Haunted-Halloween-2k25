@@ -7,12 +7,12 @@ import { getCountDays } from "../../utilities/helper";
 
 const RewardItem = ({ _data, singleList, combined }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-[0.5vw]">
+    <div className="flex flex-col items-center justify-center gap-[0.5vw] f-tangoSans">
       <Container width={singleList ? "8vw" : "12vw"} height={singleList ? "8vw" : "12vw"} className="flex items-center justify-center">
         <img className="w-full h-full object-contain" src={rewGet(_data?.desc)} alt="" />
       </Container>
       {_data?.price && (
-        <div className="flex items-center justify-center text-[1.4vw] font-bold bg-amber-800 border-[#fff] border-[0.2vw]  rounded-[3vw] px-[1vw] py-[0.3vw]  text-center text-white">
+        <div className="flex items-center justify-center text-[1.4vw] bg-amber-800 border-[#fff] border-[0.2vw]  rounded-[3vw] px-[1vw] py-[0.3vw]  text-center text-white">
           <img className="w-[2vw] h-[2vw] object-contain inline-block align-middle" src={images.beanIcon} alt="" />
           <span className="flex items-center justify-center"> {_data?.price}</span>
         </div>
@@ -22,10 +22,10 @@ const RewardItem = ({ _data, singleList, combined }) => {
           image={images.rewNameBase}
           width={singleList ? "10vw" : "15vw"}
           size="100% 100%"
-          height={singleList ? "5vw" : "10vw"}
-          className="flex items-center justify-center px-2"
+          height={singleList ? "6vw" : "9vw"}
+          className={`flex items-center justify-center px-1 leading-1.5 py-1 text-center text-white `}
         >
-          <span className={`${singleList ? "text-[1.2vw]" : "text-[1.6vw]"} text-center leading-none text-white`}>
+          <span className="text-[1.5vw]">
             {_data?.desc} {_data?.count && `${getCountDays(_data?.desc, _data?.count)}`}
           </span>
         </Container>
@@ -73,7 +73,7 @@ const RewardCarouselList = ({ _data, tab }) => {
               >
                 {data.rank && `Top ${data.rank} ${data.target ? `Target: ${data.target}` : ""}`}
               </Container>
-              <div className={`min-w-[100%] flex items-start justify-center gap-1 `}>
+              <div className={`min-w-[100%] flex items-start justify-center gap-0.5 `}>
                 <RewardSingleList _data={data.rewards} combined={data?.combined} />
               </div>
             </div>

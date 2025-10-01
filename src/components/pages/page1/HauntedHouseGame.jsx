@@ -32,7 +32,40 @@ function HauntedHouseGame({ gamePoints }) {
 
       if (errorCode === 0) {
         const rewards = playGameResponse?.data?.rewardList || [];
-        const itemMsg = playGameResponse?.data?.itemMsg || [];
+        const itemMsg = playGameResponse?.data?.itemMsg || "";
+
+        // handle single or multiple "itemMsg"
+        const items = itemMsg.split("+").map((item) => {
+          const parts = item.trim().split(" ");
+          const num = parts.shift(); // first is number
+          const name = parts.join(" ");
+          return { name, count: num };
+        });
+
+        // map item names to icons (replace with your assets if needed)
+        const icons = {
+          Pumpkin: images.iconPumpkin,
+          Candy: images.iconCandy,
+          "Witch’s Hat": images.iconWitchHat,
+          "Ghost Lantern": images.iconLantern,
+          "Bloody Mask": images.iconBloodyMask,
+          "Skeleton Hand": images.iconSkeletonHand,
+          "Magic potion": images.iconMagicPotion,
+        };
+
+        // Build JSX for single or multiple items
+        const formattedMsg = (
+          <>
+            {items.map((item, idx) => (
+              <span key={idx} className="ml-1">
+                <span className="font-semibold text-yellow-300">{item.name}</span>{" "}
+                {icons[item.name] && <img src={icons[item.name]} alt={item.name} className="w-5 h-5 inline-block" />}{" "}
+                <span className="font-semibold text-yellow-300">{item.count},</span>
+              </span>
+            ))}
+          </>
+        );
+
         const treatPoints = playGameResponse?.data?.treatPoints || [];
         const hauntedResult = Object.keys(playGameResponse?.data?.hauntedResult).length;
         setItemName(itemMsg);
@@ -41,14 +74,18 @@ function HauntedHouseGame({ gamePoints }) {
             openPopUp(
               <GamePopups
                 titleImage={singleShotSuccess.title}
-                popupTitleClass="absolute top-0 w-[60%]"
+                popupTitleClass="absolute top-[-5vw] w-[80%]"
                 backgroundImage={images.mediumBg}
                 size="100% 100%"
                 width="100%"
                 height="100vw"
                 className="relative flex items-center justify-center h-[100vw] text-white"
               >
-                {singleShotSuccess.description({ treatPoints, itemMsg, rewards })}
+                {singleShotSuccess.description({
+                  treatPoints,
+                  formattedMsg,
+                  rewards,
+                })}
               </GamePopups>
             );
             setCombo(1);
@@ -56,14 +93,19 @@ function HauntedHouseGame({ gamePoints }) {
             openPopUp(
               <GamePopups
                 titleImage={multiplePlay.title}
-                popupTitleClass="absolute top-0 w-[60%]"
+                popupTitleClass="absolute top-[-5vw] w-[80%]"
                 backgroundImage={images.mediumBg}
                 size="100% 100%"
                 width="100%"
                 height="100vw"
                 className="relative flex items-center justify-center h-[100vw] text-white"
               >
-                {multiplePlay.description({ treatPoints, itemMsg, rewards, hauntedResult })}
+                {multiplePlay.description({
+                  treatPoints,
+                  formattedMsg,
+                  rewards,
+                  hauntedResult,
+                })}
               </GamePopups>
             );
             setCombo(1);
@@ -76,12 +118,12 @@ function HauntedHouseGame({ gamePoints }) {
         openPopUp(
           <GamePopups
             titleImage={insufficientPoints.title}
-            popupTitleClass="absolute top-0 w-[60%]"
+            popupTitleClass="absolute top-[-5vw] w-[80%]"
             backgroundImage={images.smallBg}
             size="100% 100%"
             width="100%"
             height="100vw"
-            className="relative flex items-center justify-center h-[100vw] text-white"
+            className="relative flex items-center justify-center h-[60vw] text-white"
           >
             {insufficientPoints.description}
           </GamePopups>
@@ -91,12 +133,12 @@ function HauntedHouseGame({ gamePoints }) {
         openPopUp(
           <GamePopups
             titleImage={insufficientPoints.title}
-            popupTitleClass="absolute top-0 w-[60%]"
+            popupTitleClass="absolute top-[-5vw] w-[80%]"
             backgroundImage={images.smallBg}
             size="100% 100%"
             width="100%"
             height="100vw"
-            className="relative flex items-center justify-center h-[100vw] text-white"
+            className="relative flex items-center justify-center h-[60vw] text-white"
           >
             {errorMessage}
           </GamePopups>

@@ -3,12 +3,18 @@ import { captureImageError, goTo } from "../../utilities/helper";
 import Container from "../../containers/container";
 import { images } from "../../assets";
 
-export default function SingleMarquee({ ranking, name, image, userId, score }) {
+export default function SingleMarquee({ ranking, name, image, userId, score, tabs }) {
   const frame = images.tickerFrame;
   let rewardsWon = (
     <>
-      has {score} <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.treatPointsIcon} alt="" /> Treat Point
-      {score > 1 ? "s" : ""} & ranked {ranking} in the Haunted House game.
+      {tabs.tab1 ? (
+        <>
+          has {score} <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.treatPointsIcon} alt="" /> Treat Point
+          {score > 1 ? "s" : ""} & ranked {ranking} in the Haunted House game.
+        </>
+      ) : (
+        <>has completed a daily Halloween task.</>
+      )}
     </>
   );
 
@@ -28,7 +34,7 @@ export default function SingleMarquee({ ranking, name, image, userId, score }) {
         size="100% 100%"
         image={"linear-gradient(to right, rgb(156 39 176 / 78%), rgb(156 39 176 / 78%), rgb(156 39 176 / 79%))"}
         key={ranking}
-        className=" pl-[10vw] pr-[4vw] flex items-center justify-center rounded-full"
+        className=" pl-[9vw] pr-[4vw] flex items-center justify-center rounded-full"
       >
         <span className="leading-none text-[2.8vw] text-center text-white text-shadow-[0_0_1vw_rgba(0,0,0)]">
           {name} {rewardsWon}

@@ -16,22 +16,22 @@ function GameControls({ combo, setCombo, handleGameClick, isLoading }) {
           <button onClick={() => setCombo(1)}>x 1</button>
         </Container>
         <Container
-          className={`flex justify-center gap-4 ${combo === 10 ? "" : "grayscale"}`}
+          className={`flex justify-center gap-4 ${combo === 7 ? "" : "grayscale"}`}
           width="15vw"
           height="8vw"
           image={images.speedBase}
           size="100% 100%"
         >
-          <button onClick={() => setCombo(10)}>x 10</button>
+          <button onClick={() => setCombo(7)}>x 7</button>
         </Container>
         <Container
-          className={`flex justify-center gap-4 ${combo === 100 ? "" : "grayscale"}`}
+          className={`flex justify-center gap-4 ${combo === 77 ? "" : "grayscale"}`}
           width="15vw"
           height="8vw"
           image={images.speedBase}
           size="100% 100%"
         >
-          <button onClick={() => setCombo(100)}>x 100</button>
+          <button onClick={() => setCombo(77)}>x 77</button>
         </Container>
       </div>
       <div className="flex flex-col items-center justify-center gap-1">
