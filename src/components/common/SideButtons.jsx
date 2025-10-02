@@ -21,16 +21,17 @@ export default function SideButtons({}) {
         onClick={() =>
           openPopUp(
             <PopUpWrapper
-              backgroundImage={images.largeBg}
+              backgroundImage={images.xlargeBg}
               titleImage={images.titleEventGifting}
               onCloseClick={closePopUp}
-              popUpHeight="165vw"
+              // popUpHeight="165vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-8vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[140vw] overflow-y-auto overflow-x-hidden"
+              className=""
+              overlayClass="overflow-y-scroll justify-start pt-20"
             >
               <EventGifting />
             </PopUpWrapper>

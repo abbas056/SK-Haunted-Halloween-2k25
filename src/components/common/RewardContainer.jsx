@@ -23,9 +23,9 @@ const RewardItem = ({ _data, singleList, combined }) => {
           width={singleList ? "10vw" : "15vw"}
           size="100% 100%"
           height={singleList ? "6vw" : "9vw"}
-          className={`flex items-center justify-center px-1 leading-1.5 py-1 text-center text-white `}
+          className={`flex items-center justify-center px-1 leading-none py-1 text-center text-white `}
         >
-          <span className="text-[1.5vw]">
+          <span className="text-[1.2vw]">
             {_data?.desc} {_data?.count && `${getCountDays(_data?.desc, _data?.count)}`}
           </span>
         </Container>
@@ -49,27 +49,16 @@ const RewardCarouselList = ({ _data, tab }) => {
   const __data = _data?.find((d, i) => i == indexx);
   return (
     <div className="flex flex-col w-[100%] items-center">
-      <Carousel setIndex={setIndexx} indicator className="w-[90%]" width="46vw" Infinite arrows>
+      <Carousel setIndex={setIndexx} indicator className="w-[90%]" width="46vw" Infinite arrows tab={tab}>
         {_data?.map((data, _index) => {
           return (
             <div className={`flex flex-col items-center justify-center gap-[2vw]`}>
-              {tab === 1 && (
-                <Container
-                  image={images.infoTextBase}
-                  size="100% 100%"
-                  width="100%"
-                  height="5vw"
-                  className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b] "
-                >
-                  Daily Rewards for top 3 Winners
-                </Container>
-              )}
               <Container
-                image={images.infoTextBase}
+                image={tab == 1 ? null : images.infoTextBase}
                 // width="25vw"
                 size="100% 100%"
                 height="5vw"
-                className="flex items-center justify-center text-[3vw] px-4 text-[#9b511b]"
+                className={`flex items-center justify-center text-[3vw] px-4 ${tab === 1 ? "text-white" : "text-[#9b511b]"}`}
               >
                 {data.rank && `Top ${data.rank} ${data.target ? `Target: ${data.target}` : ""}`}
               </Container>
@@ -123,7 +112,20 @@ export default function RewardContainer({ rewards, singleList, tab }) {
           </div>
         </div>
       ) : (
-        <RewardCarouselList _data={rewards} tab={tab} />
+        <div className="flex flex-col items-center justify-center w-full gap-2">
+          {tab === 1 && (
+            <Container
+              image={images.infoTextBase}
+              size="100% 100%"
+              width="70%"
+              height="5vw"
+              className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b] mt-2"
+            >
+              Daily Rewards for top 3 Winners
+            </Container>
+          )}
+          <RewardCarouselList _data={rewards} tab={tab} />
+        </div>
       )}
     </Container>
   );

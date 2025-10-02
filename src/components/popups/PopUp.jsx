@@ -15,6 +15,7 @@ export default function PopUpWrapper({
   popupTitleClass = "w-full h-[19vw] mt-[-12vw] object-contain",
   popupCloseClass,
   className,
+  overlayClass,
 }) {
   const { scroll, setScroll } = useScrollStore();
   const scrollOffSet = window.pageYOffset;
@@ -34,7 +35,9 @@ export default function PopUpWrapper({
   }, [scroll]);
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen bg-[#021d6b96] backdrop-blur-sm z-[9999] flex flex-col items-center justify-center">
+    <div
+      className={`fixed top-0 left-0 w-screen h-screen bg-[#021d6b96] backdrop-blur-sm z-[9999] flex flex-col items-center justify-center ${overlayClass}`}
+    >
       <Container
         width={popUpWidth}
         image={backgroundImage}

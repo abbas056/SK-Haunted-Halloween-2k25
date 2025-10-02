@@ -30,7 +30,7 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
     } else if (index === 4) {
       gotToTopUp();
     } else if (index === 5) {
-      goTo(isLive, randomUserId, randomUserId);
+      goTo(false, randomUserId, randomUserId);
     } else if (index === 6) {
       openShortPage();
     }

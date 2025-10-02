@@ -12,7 +12,7 @@ const SliderItemIndex = ({ index }) => {
       width="16vw"
       height="6vw"
       size="100% 100%"
-      className="flex justify-center items-center text-center text-[2.8vw] text-[#aa4040] p-2"
+      className="flex justify-center items-center text-center text-[2.8vw] text-[#aa4040]"
     >
       Top {index} <sup>{getOrdinal(index)}</sup>
     </Container>
@@ -38,9 +38,9 @@ const SliderItem = ({ item, index }) => {
     </div>
   );
 };
-const SliderItems = ({ isBackground, rewards, tab }) =>
+const SliderItems = ({ isBackground, rewards, tab, dailyBtn }) =>
   rewards?.length > 0 && (
-    <Carousel className="w-full" width="28vw" Infinite arrows={!tab} indicator={!tab}>
+    <Carousel className="w-full" width="28vw" Infinite arrows={!tab} indicator={!tab} dailyBtn={dailyBtn}>
       {rewards?.map((item, i) => {
         let index = item.rank;
         return (

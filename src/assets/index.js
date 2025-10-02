@@ -135,6 +135,9 @@ export const images = {
   dailyBtn: new URL("./images/popup-assets/buttons/dailyBtn.png", import.meta.url).href,
   overallBtn: new URL("./images/popup-assets/buttons/overallBtn.png", import.meta.url).href,
   YesterdayBtn: new URL("./images/popup-assets/buttons/YesterdayBtn.png", import.meta.url).href,
+  previous: new URL("./images/previous.png", import.meta.url).href,
+  next: new URL("./images/next.png", import.meta.url).href,
+
   //
 
   dailyPointIcon: new URL("./images/MyDailyAnimalsCaughtIcon.png", import.meta.url).href,

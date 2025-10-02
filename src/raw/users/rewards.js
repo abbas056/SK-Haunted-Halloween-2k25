@@ -261,7 +261,7 @@ export const tabOneGameRewards = [
         rewards: [
           { name: "Zombie frame (New)", count: "1" },
           { name: "Sea Wolf room skin", count: "1" },
-          { name: "Halloween King frame", count: "1" },
+          { name: "Royalty frame", count: "1" },
         ],
       },
       {

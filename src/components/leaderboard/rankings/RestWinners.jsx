@@ -61,7 +61,7 @@ function RestWinners({
         </div>
       </div>
       {estBean ? (
-        <span className="min-w-[10vw] text-[1.6vw] leading-none bg-[#be04a9] px-1 py-0.5 text-center rounded-[5vw] border-amber-50 border">
+        <span className="min-w-[10vw] text-[1vw] leading-none bg-[#be04a9] px-1 py-0.5 text-center rounded-[5vw] border-amber-50 border">
           {previousDay ? "Won" : "Est"} {talent ? "Gems" : "Beans"}{" "}
           <img className="w-[2.5vw] h-[2.5vw] inline align-middle" src={talent ? images.gems : images.beanIcon} alt="" /> {estBean}
         </span>
@@ -84,9 +84,9 @@ function RestWinners({
           </Carousel>
         </div>
       ) : (
-        <div className="w-[26vw] flex items-center justify-start gap-1 text-shadow-[0_0_1vw_rgba(0,0,0,.8)]">
+        <div className="w-[22vw] flex items-center justify-start gap-0.5 text-shadow-[0_0_1vw_rgba(0,0,0,.8)]">
           <img
-            className="w-[6vw] h-[6vw] object-contain mb-[0.5vw] drop-shadow-[0_0_1vw_rgba(0,0,0,0.8)]"
+            className={`${talent ? "w-[4vw] h-[4vw]" : "w-[6vw] h-[6vw]"} object-contain drop-shadow-[0_0_1vw_rgba(0,0,0,0.8)`}
             src={tab === 1 ? images.myDailyTreatPointsIcon : tab === 2 ? images.giftBox : talent ? images.gems : images.beanIcon}
             alt=""
           />

@@ -1,7 +1,7 @@
 import React, { useState, Children, useEffect, useRef } from "react";
 import { images } from "../../assets";
 const widthSpan = 100;
-const Carousel = ({ children, Infinite, arrows, indicator, className, width, height = "auto", setIndex = () => {} }) => {
+const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, className, width, height = "auto", setIndex = () => {} }) => {
   const carouselRef = useRef(0);
   const itemRef = useRef([]);
 
@@ -16,6 +16,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
   const [touchEndPos, setTouchEndPos] = useState(0);
   const [touch, setTouch] = useState(false);
   const [swiper, setSwiper] = useState(false);
+  const [activeArrow, setActiveArrow] = useState("next"); // Track which arrow is active
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,6 +37,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
     translateFullSlides(newPosition);
     setSliderPosition(newPosition);
     setIndex(newPosition);
+    setActiveArrow("prev"); // Set previous arrow as active
   };
   const nextSlideHandler = () => {
     let newPosition = sliderPosition;
@@ -49,6 +51,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
     translateFullSlides(newPosition);
     setSliderPosition(newPosition);
     setIndex(newPosition);
+    setActiveArrow("next"); // Set next arrow as active
   };
   const touchStartHandler = (e) => {
     setTouchStartPos(e.targetTouches[0].clientX);
@@ -101,7 +104,13 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
       <div className={`flex items-center justify-center relative ${className}`}>
         {arrayChildren?.length != 1 && arrows && (
           <button onClick={prevSlideHandler}>
-            <img className="absolute left-0 top-[12vw] object-contain w-[8vw] h-[8vw] z-[99]" src={images?.leftArrow} alt="" />
+            <img
+              className={`absolute left-0 ${tab === 1 ? "top-[7vw]" : "top-[12vw]"} object-contain ${
+                dailyBtn ? "w-[5vw] h-[5vw]" : "w-[9vw] h-[9vw]"
+              } z-[99] transition-all ${activeArrow === "prev" ? "grayscale-0" : "grayscale"}`}
+              src={dailyBtn ? images.previous : images?.leftArrow}
+              alt=""
+            />
           </button>
         )}
         <div
@@ -140,16 +149,22 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
         </div>
         {arrayChildren?.length != 1 && arrows && (
           <button onClick={nextSlideHandler}>
-            <img className="absolute right-0 top-[12vw] object-contain w-[8vw] h-[8vw] z-[99]" src={images?.rightArrow} alt="" />
+            <img
+              className={`absolute right-0 ${tab === 1 ? "top-[7vw]" : "top-[12vw]"} object-contain ${
+                dailyBtn ? "w-[5vw] h-[5vw]" : "w-[9vw] h-[9vw]"
+              } z-[99] transition-all ${activeArrow === "next" ? "grayscale-0" : "grayscale"}`}
+              src={dailyBtn ? images.next : images?.rightArrow}
+              alt=""
+            />
           </button>
         )}
       </div>
-      {/* {indicator && (
-        <div className={`absolute flex items-center justify-center gap-[1.5vw] flex-shrink-0  top-[35vw]`}>
+      {dailyBtn && (
+        <div className={`absolute flex items-center justify-center gap-[1.5vw] flex-shrink-0 ${dailyBtn ? " top-[22.5vw]" : " top-[35vw]"}`}>
           {Children?.map(arrayChildren, (child, index) => {
             return (
               <div
-                className={`w-[1.5vw] h-[1.5vw] rounded-full flex-shrink-0 ${sliderPosition === index ? "bg-[#b44d06]" : "bg-[#9c745d]"}`}
+                className={`w-[1.5vw] h-[1.5vw] rounded-full flex-shrink-0 ${sliderPosition === index ? "bg-[#f9ee02]" : "bg-[white]"}`}
                 onClick={() => {
                   jumpToSlideHandler(index);
                 }}
@@ -157,7 +172,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, className, width, hei
             );
           })}
         </div>
-      )} */}
+      )}
     </div>
   );
 };

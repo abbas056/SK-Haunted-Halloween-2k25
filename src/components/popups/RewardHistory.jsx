@@ -59,14 +59,16 @@ export default function RewardHistory({
                   {tab === 1 && (
                     <>
                       <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
-                        {Object.entries(item?.map).map(([key, value]) => {
-                          if (key === "treatPoints") return null; // skip treatPoints
-                          return (
-                            <span key={key}>
-                              {itemsName[key]} x{value} +{" "}
-                            </span>
-                          );
-                        })}
+                        {Object.entries(item?.map)
+                          .filter(([key]) => key !== "treatPoints") // remove treatPoints first
+                          .map(([key, value], index, arr) => {
+                            const isLast = index === arr.length - 1;
+                            return (
+                              <span key={key}>
+                                {itemsName[key]} x{value} {!isLast && " + "}
+                              </span>
+                            );
+                          })}
                       </TableData>
                       <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
                         {item?.map?.treatPoints || 0}

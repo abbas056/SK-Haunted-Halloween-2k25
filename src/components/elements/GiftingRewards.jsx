@@ -14,7 +14,7 @@ const ForGifterRewards = ({ activeTab, userTab }) => {
 
   switch (activeTab) {
     case images.dailyBtn:
-      return <RewardsBox key={5} isBackground={false} rewards={dailyUserRewards} counter={beansPot} />;
+      return <RewardsBox key={5} isBackground={false} rewards={dailyUserRewards} counter={beansPot} dailyBtn={images.dailyBtn} />;
     case images.overallBtn:
       return (
         <div key={6}>
@@ -34,7 +34,7 @@ const ForTalentRewards = ({ activeTab, userTab }) => {
         <div className="mb-[3vw] text-white" key={3}>
           <RewardContainer rewards={dailyTalentRewards} userTab={userTab} />
           <div className="flex flex-col items-center gap-4">
-            <img className="w-50" src={images.gemsPotCounterText} alt="" />
+            <img className="w-[60%]" src={images.gemsPotCounterText} alt="" />
             <div className="flex flex-col items-start justify-center gap-3 ">
               <img className="w-[40vw] object-contain" src={images.gemsPot} alt="" />
               <Container

@@ -28,7 +28,14 @@ export function rewGet(rewDesc) {
     rewImg = baseURL + "/streamkar/gifts/40011804.png";
   } else if (newRewDesc?.includes("tiger king")) {
     rewImg = baseURL + "/streamkar/gifts/40011811.png";
+  } else if (newRewDesc?.includes("surprise box")) {
+    rewImg = baseURL + "/streamkar/gifts/40001616.png";
+  } else if (newRewDesc?.includes("pumpkin blast")) {
+    rewImg = baseURL + "/streamkar/gifts/pumpkinBlast.png";
+  } else if (newRewDesc?.includes("cross bones")) {
+    rewImg = baseURL + "/streamkar/gifts/40001453.png";
   }
+
   //
   // New
   //

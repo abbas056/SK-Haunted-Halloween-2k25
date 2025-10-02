@@ -79,7 +79,7 @@ function HauntedHouseGame({ gamePoints }) {
                 size="100% 100%"
                 width="100%"
                 height="100vw"
-                className="relative flex items-center justify-center h-[100vw] text-white"
+                className="relative flex items-center justify-center h-[100vw] text-white "
               >
                 {singleShotSuccess.description({
                   treatPoints,
@@ -98,7 +98,7 @@ function HauntedHouseGame({ gamePoints }) {
                 size="100% 100%"
                 width="100%"
                 height="100vw"
-                className="relative flex items-center justify-center h-[100vw] text-white"
+                className="relative flex items-center justify-center h-[100vw] text-white mt-[5vw] "
               >
                 {multiplePlay.description({
                   treatPoints,

@@ -10,7 +10,7 @@ export default function Beanspot({ isBackground, beans }) {
         width="16vw"
         height="6vw"
         size="100% 100%"
-        className="flex justify-center items-center text-center text-[2.6vw] text-[#aa4040] p-2"
+        className="flex justify-center items-center text-center text-[2.6vw] text-[#aa4040]"
       >
         Beans Pot
       </Container>
