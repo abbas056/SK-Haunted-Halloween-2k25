@@ -59,7 +59,7 @@ export function RecordPopupTabOne() {
   );
 }
 
-export function RecordPopupTabThree() {
+export function RecordPopupTabThree({ tab }) {
   const { user } = useUserStore();
   const [pageIndex, setPageIndex] = useState(1);
   const [record, setRecord] = useState([]);
@@ -83,7 +83,7 @@ export function RecordPopupTabThree() {
     <RewardHistory
       header={["Time (GMT)", "Rewards"]}
       data={latestRecord}
-      tab={true}
+      tab={tab}
       setPageIndex={setPageIndex}
       seemoreCondition={seemoreCondition}
       pageIndex={pageIndex}

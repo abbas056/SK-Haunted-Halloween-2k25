@@ -39,7 +39,7 @@ export default function Tab1({ tab }) {
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[140vw] overflow-y-auto overflow-x-hidden"
+              className="h-[140vw] overflow-y-auto overflow-x-hidden no-scrollbar"
             >
               <span className="m-auto text-[2.5vw] text-center text-white flex justify-center mb-2">
                 EACH PLAYER USERS WILL GET <br />
@@ -66,7 +66,7 @@ export default function Tab1({ tab }) {
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[140vw] mt-[5vw] overflow-y-auto overflow-x-hidden"
+              className="h-[140vw] mt-[5vw] overflow-y-auto overflow-x-hidden no-scrollbar"
             >
               <RecordPopupTabOne />
             </PopUpWrapper>

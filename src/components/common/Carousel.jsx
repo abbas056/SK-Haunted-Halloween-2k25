@@ -1,7 +1,7 @@
 import React, { useState, Children, useEffect, useRef } from "react";
 import { images } from "../../assets";
 const widthSpan = 100;
-const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, className, width, height = "auto", setIndex = () => {} }) => {
+const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, singleList, className, width, height = "auto", setIndex = () => {} }) => {
   const carouselRef = useRef(0);
   const itemRef = useRef([]);
 
@@ -19,12 +19,14 @@ const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, classN
   const [activeArrow, setActiveArrow] = useState("next"); // Track which arrow is active
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlideHandler();
-    }, 1500);
-    return () => {
-      clearInterval(interval);
-    };
+    if (!singleList) {
+      const interval = setInterval(() => {
+        nextSlideHandler();
+      }, 1500);
+      return () => {
+        clearInterval(interval);
+      };
+    }
   }, [sliderPosition]);
 
   const prevSlideHandler = () => {
@@ -159,12 +161,15 @@ const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, classN
           </button>
         )}
       </div>
-      {dailyBtn && (
-        <div className={`absolute flex items-center justify-center gap-[1.5vw] flex-shrink-0 ${dailyBtn ? " top-[22.5vw]" : " top-[35vw]"}`}>
+      {(dailyBtn || singleList) && (
+        <div className={`absolute flex items-center justify-center gap-[1vw] flex-shrink-0 ${dailyBtn ? "top-[22.5vw]" : "top-[22vw]"}`}>
           {Children?.map(arrayChildren, (child, index) => {
             return (
               <div
-                className={`w-[1.5vw] h-[1.5vw] rounded-full flex-shrink-0 ${sliderPosition === index ? "bg-[#f9ee02]" : "bg-[white]"}`}
+                key={index}
+                className={`${singleList ? "w-[1.7vw] h-[1.7vw]" : "w-[1.5vw] h-[1.5vw]"} rounded-full flex-shrink-0 ${
+                  singleList ? (sliderPosition === index ? "bg-[#c651dc]" : "bg-[#7304a6]") : sliderPosition === index ? "bg-[#f9ee02]" : "bg-[white]"
+                }`}
                 onClick={() => {
                   jumpToSlideHandler(index);
                 }}

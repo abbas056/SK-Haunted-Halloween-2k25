@@ -66,15 +66,15 @@ function TopWinners({ tab, userName, userScore, userAvatar, userId, roomId, inde
               />
               <img onClick={() => goTo(true, userId, roomId)} className={`relative w-[20vw] h-[20vw] mt-[-10vw]`} src={topFrame(index)} alt="" />
             </div>
-            <div className={`flex flex-col items-center justify-center`}>
+            <div className={`flex flex-col items-center justify-center gap-1`}>
               <div className="text-center ">{userName && userName.slice(0, 8)}</div>
               <img className="w-fit h-[4vw]" src={getLevelUrl(talent, talent ? actorLevel : userLevel)} alt="" />
               <div className="flex items-center justify-center gap-[1vw]">
-                <img className="w-[6vw] h-[6vw]" src={tab === 1 ? images.myDailyTreatPointsIcon : images.giftBox} alt="" />
+                <img className="w-[8vw] h-[9vw]" src={tab === 1 ? images.myDailyTreatPointsIcon : images.giftBox} alt="" />
                 <span className="text-[3vw] font-bold mt-[0.5vw]">{userScore}</span>
               </div>
               {tab === 2 && index <= 3 ? (
-                <div className=" flex items-center justify-center text-[2vw]">
+                <div className=" flex items-center justify-center text-[2vw] mt-2">
                   <span className="flex items-center justify-center">
                     <img className="w-[4vw] h-[4vw] bg-[#5a3301] rounded-[50%] px-[0.1vw] py-[0.1vw]" src={images.beanIcon} alt="" />{" "}
                     {previousDay ? "Won" : "Estimated"} Beans: <div className="ml-[0.5vw] flex items-center justify-center"> {calculatedBeans}</div>

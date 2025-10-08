@@ -28,13 +28,13 @@ function Tab3({ tab }) {
               backgroundImage={images.smallBg}
               titleImage={images.titleDetails}
               onCloseClick={closePopUp}
-              popUpHeight="120vw"
+              popUpHeight="125vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[80vw] pt-[10vw] pb-[10vw] overflow-hidden"
+              className="mt-[5vw]"
             >
               <DetailPopUp tab={3} />
             </PopUpWrapper>
@@ -57,9 +57,9 @@ function Tab3({ tab }) {
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-5vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[125vw] mt-[5vw] overflow-y-auto overflow-x-hidden"
+              className="h-[125vw] mt-[5vw] overflow-y-auto overflow-x-hidden no-scrollbar"
             >
-              <RecordPopupTabThree />
+              <RecordPopupTabThree tab={tab} />
             </PopUpWrapper>
           )
         }

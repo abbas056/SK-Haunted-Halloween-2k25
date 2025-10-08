@@ -5,7 +5,8 @@ export const langData = [
       {
         section: "Intro",
         content: (
-          <ul className="list-disc pl-[2.5vw] text-[2.8vw] text-white">
+          <ul className="list-disc pl-[2.5vw] text-[2.5vw] text-white">
+            <li>When you send event gifts, you will get Spooky Points</li>
             <li>1 bean of event gift sent = 1 Spooky Points</li>
             <li>With these points, you will be able to play this event.</li>
           </ul>
@@ -167,7 +168,7 @@ export const langData = [
       {
         section: "Intro",
         content: (
-          <ul className="list-disc pl-[2.5vw] text-[2.8vw] text-white">
+          <ul className="list-disc pl-[2.5vw] text-[2.5vw] text-white">
             <li>Jab aap event gifts bhejen gy, toh aap haasil karen gy Spooky Points</li>
             <li>1 bean of event gift sent = 1 Spooky Points</li>
             <li>In points k sath, aap yeh event khel sakein gy.</li>
@@ -263,13 +264,13 @@ export const langData = [
         section: "Talents Treats",
         content: (
           <ul className="list-disc pl-[2.5vw] text-[2.8vw] text-white">
-            <li>Event ka yeh hissa sirf talents k liye hai.</li>
-            <li>Event gifts receive karne sy apko talent points milein gy.</li>
-            <li>1 Gem of event gift received = 1 Talent Point.</li>
-            <li>Event k is hissay mein, aap treats k liye darwazay par dastak dengy aur rewards haasil karengy.</li>
-            <li>“Treat" button par aik bar successful tap = 30K Talent Points.</li>
-            <li>Jab aap "Treat" button par kamiyabi sy tap karen gy, toh talent points kaat jayen gy aur aapko reward miley ga.</li>
-            <li>Jab aap aakhri ghar tak pohanch jayengy, toh game reset ho jayegi aur aap dubara shuru sy khel saken gy.</li>
+            <li>Event ka yeh hissa sirf talents k liye hai.</li>
+            <li>Event gifts receive karne sy apko talent points milein gy.</li>
+            <li>1 Gem of event gift received = 1 Talent Point.</li>
+            <li>Event k is hissay mein, aap treats k liye darwazay par dastak dengy aur rewards haasil karengy.</li>
+            <li>“Treat" button par aik bar successful tap = 30K Talent Points.</li>
+            <li>Jab aap "Treat" button par kamiyabi sy tap karen gy, toh talent points kaat jayen gy aur aapko reward miley ga.</li>
+            <li>Jab aap aakhri ghar tak pohanch jayengy, toh game reset ho jayegi aur aap dubara shuru sy khel saken gy.</li>
           </ul>
         ),
       },

@@ -13,7 +13,7 @@ export default function DetailPopUp({ tab }) {
   return (
     <>
       <div className="w-[100%] mx-auto rounded-[2vw] border-[0.4vw] border-[#fff] overflow-hidden text-white">
-        <Table className="w-full">
+        <Table className="w-full h-full">
           <TableHead className="w-full">
             <TableRow className="w-full bg-[#8813a8]">
               {header?.map((item, i) => (

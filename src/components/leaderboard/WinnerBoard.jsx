@@ -17,7 +17,7 @@ export default function WinnerBoard({ tab, data, count, width = "86%", height, t
     <div className="w-[100%] flex flex-col justify-center items-center f-tangoSansItalic">
       <div
         ref={restBoard}
-        className={`flex flex-col m-auto gap-1 ${!active ? "overflow-y-scroll" : "overflow-hidden"}`}
+        className={`flex flex-col m-auto gap-1 ${!active ? "overflow-y-scroll no-scrollbar" : "overflow-hidden"}`}
         style={{ height: height, width: width }}
       >
         {data &&

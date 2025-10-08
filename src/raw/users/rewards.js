@@ -1,24 +1,28 @@
 export const event_gift = [
-  {
-    desc: "Haunted Hero",
-    price: "50K",
-  },
-  {
-    desc: "Pumpkin Blast",
-    price: "40K",
-  },
-  {
-    desc: "Surprise Box",
-    price: "25k",
-  },
-  {
-    desc: "Cross Bones",
-    price: "10K",
-  },
-  {
-    desc: "Candy Treat",
-    price: "0",
-  },
+  [
+    {
+      desc: "Haunted Hero",
+      price: "50K",
+    },
+    {
+      desc: "Pumpkin Blast",
+      price: "40K",
+    },
+    {
+      desc: "Surprise Box",
+      price: "25k",
+    },
+  ],
+  [
+    {
+      desc: "Cross Bones",
+      price: "10K",
+    },
+    {
+      desc: "Candy Treat",
+      price: "0",
+    },
+  ],
 ];
 
 export const tabOneBeansRewards = [
@@ -101,7 +105,7 @@ export const dailyTalentRewards = [
     combined: true,
     rewards: [
       { desc: "Gems", percent: "40% of the Gems Pot" },
-      { desc: "Potion frame (New)", count: "3" },
+      { desc: "Magic Potion frame (New)", count: "3" },
     ],
   },
   {
@@ -110,7 +114,7 @@ export const dailyTalentRewards = [
     combined: true,
     rewards: [
       { desc: "Gems", percent: "30% of the Gems Pot" },
-      { desc: "Potion frame (New)", count: "2" },
+      { desc: "Magic Potion frame (New)", count: "2" },
     ],
   },
   {
@@ -119,7 +123,7 @@ export const dailyTalentRewards = [
     combined: true,
     rewards: [
       { desc: "Gems", percent: "10% of the Gems Pot" },
-      { desc: "Potion frame (New)", count: "1" },
+      { desc: "Magic Potion frame (New)", count: "1" },
     ],
   },
   {

@@ -60,8 +60,8 @@ export const popupsEndpoint = {
         <div className="h-full flex flex-col items-center justify-center">
           <span className="px-[2vw] text-[5vw] leading-[6vw] text-white">
             You don’t have enough Spooky Points{" "}
-            <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.spookyPointsIcon} alt="" /> to play right now. Send
-            to open a haunted door right now. Send more event gifts & come back again!
+            <img className="w-[5vw] h-[5vw] object-contain inline-block align-middle" src={images.spookyPointsIcon} alt="" /> to open a haunted door
+            right now. Send more event gifts & come back again!
           </span>
         </div>
       ),

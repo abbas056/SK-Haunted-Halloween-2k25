@@ -25,7 +25,7 @@ const RewardItem = ({ _data, singleList, combined }) => {
           height={singleList ? "6vw" : "9vw"}
           className={`flex items-center justify-center px-1 leading-none py-1 text-center text-white `}
         >
-          <span className="text-[1.2vw]">
+          <span className="text-[1vw] leading-none whitespace-wrap">
             {_data?.desc} {_data?.count && `${getCountDays(_data?.desc, _data?.count)}`}
           </span>
         </Container>
@@ -99,17 +99,38 @@ export default function RewardContainer({ rewards, singleList, tab }) {
       image={images.rewardsBg}
       width={tab ? "80%" : singleList ? "95%" : "100%"}
       size="100% 100%"
-      height={tab === 1 ? "45vw" : tab === 2 ? "40vw" : singleList ? "35vw" : "40vw"}
-      className={`relative flex items-center justify-center gap-1 pt-2 mb-[3vw]`}
+      height={tab === 1 ? "45vw" : tab === 2 ? "40vw" : singleList ? "38vw" : "40vw"}
+      className={`relative flex items-center justify-center gap-1 mb-[3vw] ${singleList ? "py-2" : "pt-4"}`}
     >
       {singleList ? (
-        <div className="flex flex-col items-center justify-center">
-          <Container image={images.rankBase} size="100% 100%" className="absolute text-center px-2 text-[3vw] text-[#b14d4d] top-[4vw]">
+        <div className="flex flex-col items-center justify-center gap-1 pb-2">
+          <Container image={images.rankBase} size="100% 100%" className="text-center px-2 text-[3vw] text-[#b14d4d] top-[4vw]">
             Event Gifts
           </Container>
-          <div className="flex">
-            <RewardSingleList _data={rewards} singleList={singleList} />
-          </div>
+          <Carousel className="w-full" width="40vw" singleList Infinite={true}>
+            {rewards?.map((row, rowIndex) => (
+              <div key={rowIndex} className="flex items-center justify-center gap-1">
+                {row.map((item, i) => (
+                  <div key={i} className="flex flex-col items-center justify-center gap-[0.5vw] f-tangoSans">
+                    <img className="w-[10vw] h-[10vw]" src={rewGet(item?.desc)} alt="" />
+                    <div className="flex items-center justify-center text-[1.4vw] bg-amber-800 border-[#fff] border-[0.2vw]  rounded-[3vw] px-[1vw] py-[0.3vw]  text-center text-white">
+                      <img className="w-[2vw] h-[2vw] object-contain inline-block align-middle" src={images.beanIcon} alt="" />
+                      <span className="flex items-center justify-center"> {item?.price}</span>
+                    </div>
+                    <Container
+                      image={images.rewNameBase}
+                      width={"12vw"}
+                      size="100% 100%"
+                      height={"6vw"}
+                      className={`flex items-center justify-center px-1 leading-none py-1 text-center text-white `}
+                    >
+                      <span className="text-[1.5vw] leading-none whitespace-wrap">{item?.desc}</span>
+                    </Container>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </Carousel>
         </div>
       ) : (
         <div className="flex flex-col items-center justify-center w-full gap-2">

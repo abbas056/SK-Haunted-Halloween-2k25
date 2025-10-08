@@ -56,6 +56,14 @@ export function rewGet(rewDesc) {
       rewImg = baseURL + "/streamkar/rewards/twilightBloomRoomskin.png";
     } else if (newRewDesc?.includes("twilight bloom frame")) {
       rewImg = baseURL + "/streamkar/rewards/twilightBloomFrame.png";
+    } else if (newRewDesc?.includes("zombie room skin")) {
+      rewImg = baseURL + "/streamkar/rewards/zombieRoomskin.png";
+    } else if (newRewDesc?.includes("zombie frame")) {
+      rewImg = baseURL + "/streamkar/rewards/zombieFrame.png";
+    } else if (newRewDesc?.includes("magic potion frame")) {
+      rewImg = baseURL + "/streamkar/rewards/magicPotionFrame.png";
+    } else if (newRewDesc?.includes("magic potion room skin")) {
+      rewImg = baseURL + "/streamkar/rewards/magicPotionRoomskin.png";
     } else {
       rewImg = baseURL + "/streamkar/rewards/noRew.png";
     }
@@ -121,7 +129,7 @@ export function rewGet(rewDesc) {
     } else if (newRewDesc?.includes("howzat")) {
       rewImg = baseURL + "/streamkar/rewards/howZatEntrance.png";
     } else if (newRewDesc?.includes("gold dragon")) {
-      rewImg = baseURL + "/streamkar/rewards/howZatEntrance.png";
+      rewImg = baseURL + "/streamkar/rewards/dragon.png";
     } else {
       rewImg = baseURL + "/streamkar/rewards/noRew.png";
     }
@@ -308,10 +316,12 @@ export function rewGet(rewDesc) {
       rewImg = baseURL + "/streamkar/rewards/victorFrame.png";
     } else if (newRewDesc?.includes("orbit")) {
       rewImg = baseURL + "/streamkar/rewards/orbit.png";
-    } else if (newRewDesc?.includes("royal")) {
-      rewImg = baseURL + "/streamkar/rewards/royalProfileFrame.png";
+    } else if (newRewDesc?.includes("royalty")) {
+      rewImg = baseURL + "/streamkar/rewards/royaltiProfileFrame.png";
     } else if (newRewDesc?.includes("powerful")) {
       rewImg = baseURL + "/streamkar/rewards/powerFulFrame.png";
+    } else if (newRewDesc?.includes("royal")) {
+      rewImg = baseURL + "/streamkar/rewards/royalProfileFrame.png";
     } else if (newRewDesc?.includes("iron hook")) {
       rewImg = baseURL + "/streamkar/rewards/iron-hook-frame.png";
     } else if (newRewDesc?.includes("graceful")) {
@@ -364,8 +374,6 @@ export function rewGet(rewDesc) {
       rewImg = baseURL + "/streamkar/rewards/furyFrame.png";
     } else if (newRewDesc?.includes("fighter")) {
       rewImg = baseURL + "/streamkar/rewards/fighterProfileFrame.png";
-    } else if (newRewDesc?.includes("royalty")) {
-      rewImg = baseURL + "/streamkar/rewards/royaltiProfileFrame.png";
     } else if (newRewDesc?.includes("glory")) {
       rewImg = baseURL + "/streamkar/rewards/glory-frame.png";
     } else if (newRewDesc?.includes("ace")) {

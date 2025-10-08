@@ -31,7 +31,7 @@ export default function SideButtons({}) {
               popupTitleClass="w-[70%] z-[9] absolute top-[-8vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
               className=""
-              overlayClass="overflow-y-scroll justify-start pt-20"
+              overlayClass="overflow-y-scroll justify-start pt-20 no-scrollbar"
             >
               <EventGifting />
             </PopUpWrapper>
@@ -54,7 +54,7 @@ export default function SideButtons({}) {
               popUpPos="center"
               popupTitleClass="w-[70%] z-[9] absolute top-[-8vw]"
               popupCloseClass="w-[8vw] h-[8vw]"
-              className="h-[140vw] overflow-y-auto overflow-x-hidden"
+              className="h-[140vw] overflow-y-auto overflow-x-hidden no-scrollbar"
             >
               <RewardContainer rewards={event_gift} singleList />
               <Guide />

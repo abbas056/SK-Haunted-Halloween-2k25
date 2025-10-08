@@ -34,7 +34,9 @@ export default function RewardHistory({
             <TableRow className="w-full bg-[#922caf]">
               {header?.map((item, i) => (
                 <TableData
-                  className={`w-[10%] text-center text-[3vw] p-[1vw] ${i != header.length - 1 ? "border-r-[0.4vw] border-[#fff]" : ""}`}
+                  className={`text-center text-[3vw] px-2 py-1 ${tab === 3 ? "w-[20%]" : ""}  ${
+                    i != header.length - 1 ? "border-r-[0.4vw] border-[#fff]" : ""
+                  }`}
                   key={i}
                 >
                   {item}
@@ -53,12 +55,10 @@ export default function RewardHistory({
             {data?.map((item, i) => {
               return (
                 <TableRow className="border-b-[0.4vw] border-[#fff]" key={i}>
-                  <TableData className="w-[22vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
-                    {convertToTime(item?.time)}
-                  </TableData>
+                  <TableData className="w-[15%] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">{convertToTime(item?.time)}</TableData>
                   {tab === 1 && (
                     <>
-                      <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
+                      <TableData className="w-[15%] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
                         {Object.entries(item?.map)
                           .filter(([key]) => key !== "treatPoints") // remove treatPoints first
                           .map(([key, value], index, arr) => {
@@ -70,16 +70,16 @@ export default function RewardHistory({
                             );
                           })}
                       </TableData>
-                      <TableData className="w-[15vw] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
+                      <TableData className="w-[15%] border-r-[0.4vw] p-[1vw] border-[#fff] text-[2vw] text-center">
                         {item?.map?.treatPoints || 0}
                       </TableData>
                     </>
                   )}
 
-                  <TableData className="flex justify-center items-center flex-wrap gap-[0.5vw] w-full p-[1vw] max-h-[40vw] overflow-y-auto text-[2vw]">
+                  <TableData className="flex justify-center items-center flex-wrap gap-1 w-full p-[1vw] text-[2vw]">
                     {item?.rewardDTOList?.length > 0 ? (
                       item?.rewardDTOList?.map((reward, i) => (
-                        <span className="flex flex-col items-center gap-[1vw] w-[8vw] text-center" key={i}>
+                        <span className="flex flex-col items-center gap-[1vw] w-[7vw] text-center" key={i}>
                           <img className="w-[6vw] h-[6vw]" src={rewGet(reward.desc)} alt="" />
                           <span className="text-[1.8vw] w-[7vw] text-center leading-none">
                             {reward.name} {getCountDays(reward.desc, reward.count)}
