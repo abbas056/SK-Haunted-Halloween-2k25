@@ -20,12 +20,12 @@ const RewardItem = ({ _data, singleList, combined }) => {
       {!combined && (
         <Container
           image={images.rewNameBase}
-          width={singleList ? "10vw" : "15vw"}
+          width="15vw"
           size="100% 100%"
-          height={singleList ? "6vw" : "9vw"}
-          className={`flex items-center justify-center px-1 leading-none py-1 text-center text-white `}
+          height="10vw"
+          className={`flex items-center justify-center px-1 leading-none py-0.5 text-center text-white `}
         >
-          <span className="text-[1vw] leading-none whitespace-wrap">
+          <span className="text-[1.5vw] ">
             {_data?.desc} {_data?.count && `${getCountDays(_data?.desc, _data?.count)}`}
           </span>
         </Container>
@@ -99,7 +99,7 @@ export default function RewardContainer({ rewards, singleList, tab }) {
       image={images.rewardsBg}
       width={tab ? "80%" : singleList ? "95%" : "100%"}
       size="100% 100%"
-      height={tab === 1 ? "45vw" : tab === 2 ? "40vw" : singleList ? "38vw" : "40vw"}
+      // height={tab === 1 ? "45vw" : tab === 2 ? "40vw" : singleList ? "38vw" : "40vw"}
       className={`relative flex items-center justify-center gap-1 mb-[3vw] ${singleList ? "py-2" : "pt-4"}`}
     >
       {singleList ? (
@@ -119,9 +119,9 @@ export default function RewardContainer({ rewards, singleList, tab }) {
                     </div>
                     <Container
                       image={images.rewNameBase}
-                      width={"12vw"}
+                      width={"13vw"}
                       size="100% 100%"
-                      height={"6vw"}
+                      height={"8vw"}
                       className={`flex items-center justify-center px-1 leading-none py-1 text-center text-white `}
                     >
                       <span className="text-[1.5vw] leading-none whitespace-wrap">{item?.desc}</span>

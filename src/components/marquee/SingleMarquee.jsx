@@ -21,9 +21,9 @@ export default function SingleMarquee({ ranking, name, image, userId, score, tab
   return (
     <div className="flex items-center relative ml-[2vw]">
       <a className="flex-shrink-0 relative mr-[-9vw]" onClick={() => goTo(0, userId, userId)}>
-        <Container width="12vw" height="12vw" size="100% 100%" postion="center" image={frame} key={ranking} className="relative z-[1]"></Container>
+        <Container width="11vw" height="12vw" size="100% 100%" postion="center" image={frame} key={ranking} className="relative z-[1]"></Container>
         <img
-          className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[9vw] h-[9vw] rounded-full"
+          className="absolute z-[1] top-[6.8vw] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[8vw] h-[8vw] rounded-full"
           onErrorCapture={captureImageError}
           src={image ? image : images.unknown}
         />

@@ -33,7 +33,7 @@ export default function Tab1({ tab }) {
               backgroundImage={images.largeBg}
               titleImage={images.titleDetails}
               onCloseClick={closePopUp}
-              popUpHeight="160vw"
+              popUpHeight="150vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
@@ -60,7 +60,7 @@ export default function Tab1({ tab }) {
               backgroundImage={images.largeBg}
               titleImage={images.titleRecords}
               onCloseClick={closePopUp}
-              popUpHeight="165vw"
+              popUpHeight="150vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"

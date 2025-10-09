@@ -81,7 +81,7 @@ export default function Tab2({ tab, setTabs }) {
 
   return (
     <>
-      <Container image={images.taskSectionBg} size="100% 100%" width="100%" className="flex flex-col  items-center justify-start pb-[30vw]">
+      <Container image={images.taskSectionBg} size="100% 100%" width="100%" className="flex flex-col  items-center justify-start pb-[25vw]">
         <Container
           image={images.infoTextBg}
           size="100% 100%"

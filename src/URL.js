@@ -5,7 +5,7 @@ var user;
 if (enviroment === "test") {
   user = {
     uid: 596492375,
-    token: "A1CA4D4A289C954A148C64CD964CF3DD31",
+    token: "A1EA309E4ADEF54B1E9C96D4B2547E40B0",
   };
   baseURL = "http://test.streamkar.tv";
 } else {

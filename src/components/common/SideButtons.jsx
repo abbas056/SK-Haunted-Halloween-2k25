@@ -48,7 +48,7 @@ export default function SideButtons({}) {
               backgroundImage={images.largeBg}
               titleImage={images.titleGuide}
               onCloseClick={closePopUp}
-              popUpHeight="165vw"
+              popUpHeight="150vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"

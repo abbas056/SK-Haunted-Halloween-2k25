@@ -113,7 +113,7 @@ function HauntedHouseGame({ gamePoints }) {
           setTimeout(() => {
             setItemName("");
           }, 3000);
-        }, 1000);
+        }, 1500);
       } else if (errorCode === 10000004) {
         openPopUp(
           <GamePopups
@@ -199,7 +199,7 @@ function HauntedHouseGame({ gamePoints }) {
               alt=""
             />
             {/* Shine Effect */}
-            {door.isDoorOpen && (
+            {/* {door.isDoorOpen && (
               <img
                 className="absolute z-20"
                 style={{
@@ -213,7 +213,7 @@ function HauntedHouseGame({ gamePoints }) {
                 src={door.shine}
                 alt=""
               />
-            )}
+            )} */}
             {/* Door Image */}
             <img
               className="absolute z-0"

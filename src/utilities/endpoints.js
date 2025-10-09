@@ -42,7 +42,7 @@ const endpoints = {
     userGame: "/api/activity/halloween2025/playGame?type=1&playCount=",
     claimChest: "/api/activity/halloween2025/playGame?type=2&playCount=1",
     getRecord: (pageNumber, userId) =>
-      `/api/activity/eidF/getRecordInfoV2?eventDesc=${eventDesc}&type=1&rankIndex=21&pageSize=20&pageNum=${pageNumber}&userId=${userId}`,
+      `/api/activity/eidF/getRecordInfoV2?eventDesc=${eventDesc}&type=1&rankIndex=21&pageSize=10&pageNum=${pageNumber}&userId=${userId}`,
     getRechargeRecord: (pageNumber, userId) =>
       `/api/activity/eidF/getRecordInfoV2?eventDesc=${eventDesc}&type=3&rankIndex=21&pageSize=20&pageNum=${pageNumber}&userId=${userId}`,
     todayRank: `/api/activity/eidF/getLeaderboardInfoV2?eventDesc=${eventDesc}&rankIndex=17&pageNum=1&pageSize=20&dayIndex=${currentDate}`,
@@ -57,7 +57,7 @@ const endpoints = {
   },
   tab3: {
     talentGame: (playCount) => `/api/activity/halloween2025/playGame?type=3&playCount=${playCount}`,
-    getRecord: `/api/activity/eidF/getRecordInfoV2?eventDesc=${eventDesc}&type=2&rankIndex=21&pageNum=1&pageSize=20&userId=`,
+    getRecord: `/api/activity/eidF/getRecordInfoV2?eventDesc=${eventDesc}&type=2&rankIndex=21&pageNum=1&pageSize=10&userId=`,
     getWinner: `/api/activity/eidF/getWinnerRankInfo?eventDesc=${eventDesc}&rankIndex=2&pageNum=1&pageSize=20`,
   },
   event: {

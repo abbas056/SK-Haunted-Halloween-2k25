@@ -51,7 +51,7 @@ function Tab3({ tab }) {
               backgroundImage={images.largeBg}
               titleImage={images.titleRecords}
               onCloseClick={closePopUp}
-              popUpHeight="165vw"
+              popUpHeight="150vw"
               popUpWidth="100%"
               popUpSize="100% 100%"
               popUpPos="center"
@@ -72,11 +72,11 @@ function Tab3({ tab }) {
           height="22vw"
           pointIcon={images.talentPointsIcon}
           pointText={`My Talent Points:`}
-          points={eventInfo?.gamePoints || 0}
+          points={eventInfo?.talentPoints || 0}
           pointTextClassName="text-[white] text-[3vw] leading-3.5"
           className="flex items-center justify-start px-[5vw] f-tangoSansItalic gap-0.5 relative"
         />
-        <TalentTreetGame gamePoints={eventInfo?.gamePoints || 0} />
+        <TalentTreetGame talentPoints={eventInfo?.talentPoints || 0} />
       </Container>
       <Container
         image={images.winnersBg}

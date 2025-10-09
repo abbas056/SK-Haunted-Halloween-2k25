@@ -95,7 +95,7 @@ function ChestBox({ value }) {
         size="100% 100%"
       >
         <Container
-          className="absolute flex justify-center items-center right-0 top-3 text-[3.2vw]"
+          className="absolute flex justify-center items-center right-[16vw] top-[27vw] text-[3.2vw]"
           image={images.chestCounterBase}
           width="25%"
           height="8vw"

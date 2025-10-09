@@ -12,9 +12,8 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
   const { user } = useUserStore();
   const { eventInfo } = useOverallQuery(user?.uid);
   const myDailyTasks = eventInfo?.taskInfoList || [];
-  const myDailyCandySent = (eventInfo && eventInfo?.beansPotInfo?.[`DAILY_CANDY_SEND_${currentDate}`]) || 0;
-  const myDailyCandyReceived = (eventInfo && eventInfo?.beansPotInfo?.[`DAILY_CANDY_RECEIVED_${currentDate}`]) || 0;
-  console.log(myDailyCandyReceived);
+  const myDailyCandySent = (eventInfo && eventInfo?.dailyCandySend) || 0;
+  const myDailyCandyReceived = (eventInfo && eventInfo?.dailyCandyReceived) || 0;
 
   const redirectTo = (index) => {
     if (index === 0) {
@@ -72,24 +71,26 @@ function DailyTasksSection({ setTabs, streamId, randomUserId, isLive }) {
           </div>
         ))}
       </div>
-      <div className="w-[90%] flex  items-center justify-center gap-2 mt-4 ">
+      <div className="w-[90%] flex  items-center justify-center gap-1 mt-4 ">
         <PointGame
           background={images.myDailyCandySentBase}
-          width="48%"
+          width="45%"
           height="14vw"
           pointIcon={images.myDailyCandySentIcon}
-          pointText={`My Daily Candy Treat Sent: ${myDailyCandySent}`}
-          pointTextClassName="text-[white] text-[2.5vw] leading-2.5 text-left"
-          className="flex items-center justify-center px-4 f-tangoSansItalic m-auto"
+          pointText={`My Daily Candy Treat Sent:`}
+          points={myDailyCandySent}
+          pointTextClassName="text-[white] text-[2.5vw] leading-3 text-left"
+          className="flex items-center justify-center px-4 f-tangoSansItalic shadow "
         />
         <PointGame
           background={images.myDailyCandyReceivedBase}
-          width="48%"
+          width="45%"
           height="14vw"
           pointIcon={images.mMyDailyCandyReceivedIcon}
-          pointText={`My Daily Candy Treat Received: ${myDailyCandyReceived}`}
-          pointTextClassName="text-[white] text-[2.5vw] leading-2.5 text-left"
-          className="flex items-center justify-center px-4 f-tangoSansItalic m-auto"
+          pointText={`My Daily Candy Treat Received:`}
+          points={myDailyCandyReceived}
+          pointTextClassName="text-[white] text-[2.5vw] leading-3 text-left"
+          className="flex items-center justify-center px-4 f-tangoSansItalic shadow "
         />
       </div>
     </div>

@@ -57,7 +57,7 @@ export default function Board({
           size="100% 100%"
           width="60%"
           height="6vw"
-          className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b] "
+          className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b]  py-1"
         >
           Daily Rewards for top 3 Winners
         </Container>
@@ -75,9 +75,9 @@ export default function Board({
           <Container
             image={images.infoTextBase}
             size="100% 100%"
-            width="75%"
-            height="6vw"
-            className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b] px-2"
+            // width="75%"
+            // height="8vw"
+            className="flex items-center justify-center text-center text-[2.8vw] text-[#9b511b] px-2 py-1"
           >
             {isSent ? "Send" : "Receive"} More Candy Treat gifts, Get higher rank
           </Container>

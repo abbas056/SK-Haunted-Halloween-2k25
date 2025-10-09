@@ -38,6 +38,28 @@ function TalentTreetGame() {
     }
   }, [eventInfo]);
 
+  const showSuccessPopup = (rewards) => {
+    openPopUp(
+      <GamePopups
+        titleImage={successShot.title}
+        popupTitleClass="absolute top-0 w-[70%]"
+        backgroundImage={images.smallBg}
+        size="100% 100%"
+        width="100%"
+        height="100vw"
+        className="relative flex items-center justify-center h-[90vw] text-white"
+      >
+        {successShot.description({ rewards })}
+      </GamePopups>
+    );
+    setAnimatingMascot({
+      state: false,
+      image: images.mascot,
+    });
+    setCombo(1);
+    refetch();
+  };
+
   const handleGameClick = () => {
     if (!combo || isNaN(combo)) {
       openToast("Combo Number must be valid");
@@ -72,49 +94,24 @@ function TalentTreetGame() {
                   if (prev < nextIndex) {
                     return prev + 1;
                   }
-                  if (prev == checkpoints[checkpoints?.length - 1]) {
-                    openPopUp(
-                      <GamePopups
-                        titleImage={successShot.title}
-                        popupTitleClass="absolute top-0 w-[70%]"
-                        backgroundImage={images.smallBg}
-                        size="100% 100%"
-                        width="100%"
-                        height="100vw"
-                        className="relative flex items-center justify-center h-[90vw] text-white"
-                      >
-                        {successShot.description({ rewards })}
-                      </GamePopups>
-                    );
-                    setAnimatingMascot({
-                      state: false,
-                      image: images.mascot,
-                    });
-                    setCombo(1);
-                    clearInterval(timeinterval);
-                    refetch();
-                    return 12;
-                  }
-                  openPopUp(
-                    <GamePopups
-                      titleImage={successShot.title}
-                      popupTitleClass="absolute top-0 w-[70%]"
-                      backgroundImage={images.smallBg}
-                      size="100% 100%"
-                      width="100%"
-                      height="100vw"
-                      className="relative flex items-center justify-center h-[90vw] text-white"
-                    >
-                      {successShot.description({ rewards })}
-                    </GamePopups>
-                  );
+                  // Walking animation complete, now show knocking animation
+                  clearInterval(timeinterval);
+
+                  // Set knocking animation
                   setAnimatingMascot({
-                    state: false,
-                    image: images.mascot,
+                    state: true,
+                    image: images.animations.knockingMascot,
                   });
-                  setCombo(1);
-                  clearInterval(timeinterval); // Stop the interval once the condition is met
-                  refetch();
+
+                  // After 1500ms, show popup
+                  setTimeout(() => {
+                    if (prev == checkpoints[checkpoints?.length - 1]) {
+                      showSuccessPopup(rewards);
+                      return prev;
+                    }
+                    showSuccessPopup(rewards);
+                  }, 1500);
+
                   return prev;
                 });
               }, 1000);

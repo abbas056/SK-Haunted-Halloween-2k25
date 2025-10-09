@@ -81,7 +81,7 @@ export default function TopEventProfiles({ data, talent, percentage, beans, prev
                   <span className="w-[10vw] text-[2.5vw] font-bold leading-none whitespace-pre text-ellipsis overflow-x-hidden text-center">
                     {item?.nickname}
                   </span>
-                  <img className="w-fit h-[3vw] object-contain" src={getLevelUrl(talent, talent ? item?.actorLevel : item?.userLevel)} alt="" />
+                  <img className="w-[10vw] h-[3vw] object-contain" src={getLevelUrl(talent, talent ? item?.actorLevel : item?.userLevel)} alt="" />
                   <span className="text-white text-[2vw]">
                     <img
                       className="w-[4vw] h-[4vw] inline align-middle object-contain bg-[#5a3301] rounded-full border-[0.3vw] border-white p-[0.4vw] mr-[0.5vw]"

@@ -19,14 +19,12 @@ const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, single
   const [activeArrow, setActiveArrow] = useState("next"); // Track which arrow is active
 
   useEffect(() => {
-    if (!singleList) {
-      const interval = setInterval(() => {
-        nextSlideHandler();
-      }, 1500);
-      return () => {
-        clearInterval(interval);
-      };
-    }
+    const interval = setInterval(() => {
+      nextSlideHandler();
+    }, 2000);
+    return () => {
+      clearInterval(interval);
+    };
   }, [sliderPosition]);
 
   const prevSlideHandler = () => {
@@ -102,7 +100,7 @@ const Carousel = ({ children, Infinite, arrows, indicator, tab, dailyBtn, single
   };
   const arrayChildren = Children.toArray(children);
   return (
-    <div className="w-full gap-[2vw] flex flex-col items-center justify-center relative">
+    <div className={`w-full gap-[2vw] flex flex-col items-center justify-center relative ${tab === 3 ? "ml-[-10vw]" : ""}`}>
       <div className={`flex items-center justify-center relative ${className}`}>
         {arrayChildren?.length != 1 && arrows && (
           <button onClick={prevSlideHandler}>
